@@ -1,118 +1,149 @@
 'use client';
 
 import React from 'react';
-import { Box, Typography, Divider, Grid, Paper } from '@mui/material';
+import { Box, Typography, Grid, List, ListItem } from '@mui/material';
 
 export default function Awards() {
-  const sectionStyles = {
-    padding: '20px',
-    margin: '20px 0',
-    backgroundColor: '#F9F6FF',
-    borderRadius: '10px',
+  const sectionTitleStyles = {
+    fontSize: '1.8rem',
+    fontWeight: 'bold',
+    marginBottom: '10px',
+    color: '#DCCFF9',
+  };
+
+  const subTextStyles = {
+    fontSize: '1rem',
+    color: '#666666',
+    lineHeight: '1.5',
+  };
+
+  const itemTextStyles = {
+    fontSize: '1rem',
+    color: '#444444',
+    lineHeight: '1.5',
   };
 
   return (
-    <Box sx={{ padding: '20px' }}>
-      <Typography variant="h4" align="center" fontWeight="bold" gutterBottom>
-        Recognition
+    <Box sx={{ padding: '50px 20px', maxWidth: '900px', margin: '0 auto' }}>
+      {/* Page Header */}
+      <Typography
+        align="center"
+        sx={{ fontSize: '2rem', fontWeight: 'bold', marginBottom: '20px', color: '#DCCFF9' }}
+      >
+        RECOGNITION
+      </Typography>
+      <Typography
+        align="center"
+        sx={{ fontSize: '1rem', color: '#666666', marginBottom: '40px', lineHeight: '1.6' }}
+      >
+        Celebrating our achievements and contributions
       </Typography>
 
-      {/* Dean's List Section */}
-      <Paper elevation={2} style={sectionStyles}>
-        <Typography variant="h5" fontWeight="bold" gutterBottom>
-          Dean's List
+      {/* Dean's List */}
+      <Box sx={{ marginBottom: '40px' }}>
+        <Typography sx={sectionTitleStyles}>Dean's List</Typography>
+        <Typography sx={subTextStyles}>
+          Congratulations to our sisters who achieved a GPA of 3.50 or higher in the 2023-2024
+          school year!
         </Typography>
-        <Typography>
-          Congratulations to our sisters who achieved a GPA of 3.50 or higher in the 2023-2024 school year!
-        </Typography>
-        <ul>
-          <li>Megan Morimoto: Dean’s List Fall 2023 & Winter 2024</li>
-          <li>Haley Hoang: Dean’s List Fall 2023</li>
-          <li>Anh Tran: Dean’s List Fall 2024</li>
-          <li>Sara Stone: Dean’s List Winter 2024</li>
-        </ul>
-      </Paper>
+        <Box sx={{ marginTop: '20px' }}>
+          <Typography sx={itemTextStyles}>Megan Morimoto: Dean’s List Fall 2023 & Winter 2024</Typography>
+          <Typography sx={itemTextStyles}>Haley Hoang: Dean’s List Fall 2023</Typography>
+          <Typography sx={itemTextStyles}>Anh Tran: Dean’s List Fall 2024</Typography>
+          <Typography sx={itemTextStyles}>Sara Stone: Dean’s List Winter 2024</Typography>
+        </Box>
+      </Box>
 
       {/* Chapter's Scholarship Recognition */}
-      <Paper elevation={2} style={sectionStyles}>
-        <Typography variant="h5" fontWeight="bold" gutterBottom>
-          Chapter's Scholarship Recognition
-        </Typography>
-        <Grid container spacing={2}>
-          <Grid item xs={6}>
-            <ul>
-              <li>Fall 2022 - USFC 1st Highest GPA</li>
-              <li>Spring 2022 - USFC 2nd Highest GPA</li>
-              <li>Winter 2022 - USFC Highest GPA</li>
-              <li>Spring 2021 - USFC 2nd Highest GPA</li>
-              <li>Winter 2021 - USFC Highest GPA</li>
-              <li>Winter 2021 - CP Greek Life Highest GPA</li>
-            </ul>
+      <Box sx={{ marginBottom: '40px' }}>
+        <Typography sx={sectionTitleStyles}>Chapter's Scholarship Recognition</Typography>
+        <Grid container spacing={4}>
+          <Grid item xs={12} sm={6}>
+            <List sx={{ padding: 0 }}>
+              <ListItem sx={{ padding: 0 }}>
+                <Typography sx={itemTextStyles}>Fall 2022 - USFC 1st Highest GPA</Typography>
+              </ListItem>
+              <ListItem sx={{ padding: 0 }}>
+                <Typography sx={itemTextStyles}>Spring 2022 - USFC 2nd Highest GPA</Typography>
+              </ListItem>
+              <ListItem sx={{ padding: 0 }}>
+                <Typography sx={itemTextStyles}>Winter 2022 - USFC Highest GPA</Typography>
+              </ListItem>
+              <ListItem sx={{ padding: 0 }}>
+                <Typography sx={itemTextStyles}>Spring 2021 - USFC 2nd Highest GPA</Typography>
+              </ListItem>
+              <ListItem sx={{ padding: 0 }}>
+                <Typography sx={itemTextStyles}>Winter 2021 - USFC Highest GPA</Typography>
+              </ListItem>
+              <ListItem sx={{ padding: 0 }}>
+                <Typography sx={itemTextStyles}>Winter 2021 - CP Greek Life Highest GPA</Typography>
+              </ListItem>
+            </List>
           </Grid>
-          <Grid item xs={6}>
-            <ul>
-              <li>Fall 2020 - CP Greek Life Highest GPA</li>
-              <li>Fall 2020 - USFC Highest GPA</li>
-              <li>Spring 2020 - USFC Highest GPA</li>
-              <li>Fall 2019 - USFC 2nd Highest GPA</li>
-              <li>Fall 2018 - CP Greek Life Unweighted GPA, 2nd Highest</li>
-              <li>Spring 2018 - USFC Highest GPA</li>
-            </ul>
+          <Grid item xs={12} sm={6}>
+            <List sx={{ padding: 0 }}>
+              <ListItem sx={{ padding: 0 }}>
+                <Typography sx={itemTextStyles}>Fall 2020 - CP Greek Life Highest GPA</Typography>
+              </ListItem>
+              <ListItem sx={{ padding: 0 }}>
+                <Typography sx={itemTextStyles}>Spring 2020 - USFC Highest GPA</Typography>
+              </ListItem>
+              <ListItem sx={{ padding: 0 }}>
+                <Typography sx={itemTextStyles}>Fall 2019 - USFC 2nd Highest GPA</Typography>
+              </ListItem>
+              <ListItem sx={{ padding: 0 }}>
+                <Typography sx={itemTextStyles}>
+                  Fall 2018 - CP Greek Life Unweighted GPA, 2nd Highest
+                </Typography>
+              </ListItem>
+              <ListItem sx={{ padding: 0 }}>
+                <Typography sx={itemTextStyles}>Spring 2018 - USFC Highest GPA</Typography>
+              </ListItem>
+              <ListItem sx={{ padding: 0 }}>
+                <Typography sx={itemTextStyles}>Winter 2018 - USFC Highest GPA</Typography>
+              </ListItem>
+            </List>
           </Grid>
         </Grid>
-      </Paper>
+      </Box>
 
       {/* University Recognition */}
-      <Paper elevation={2} style={sectionStyles}>
-        <Typography variant="h5" fontWeight="bold" gutterBottom>
-          University Recognition
-        </Typography>
-        <Grid container spacing={2}>
-          <Grid item xs={6}>
-            <ul>
-              <li>Spring 2022 - USFC's Academic Excellence Award</li>
-              <li>Spring 2022 - USFC's Philanthropy of the Year</li>
-              <li>Spring 2022 - USFC’s Excellence in Unity & Belonging</li>
-              <li>Spring 2022 - USFC’s Excellence in Safety & Risk Management</li>
-              <li>Spring 2022 - USFC’s Excellence in Diversity, Equity, & Inclusion</li>
-            </ul>
-          </Grid>
-          <Grid item xs={6}>
-            <ul>
-              <li>Spring 2021 - Most Improved Chapter</li>
-              <li>Spring 2021 - USFC’s Excellence in Safety & Risk Management</li>
-              <li>Spring 2020 - USFC's Excellence in Scholarship & Learning</li>
-              <li>Spring 2023 - FSL Standards of Excellence: Philanthropy Event of the Year</li>
-            </ul>
+      <Box sx={{ marginBottom: '40px' }}>
+        <Typography sx={sectionTitleStyles}>University Recognition</Typography>
+        <Grid container spacing={4}>
+          <Grid item xs={12} sm={6}>
+            <List sx={{ padding: 0 }}>
+              <ListItem sx={{ padding: 0 }}>
+                <Typography sx={itemTextStyles}>Spring 2022 - USFC's Academic Excellence Award</Typography>
+              </ListItem>
+              <ListItem sx={{ padding: 0 }}>
+                <Typography sx={itemTextStyles}>Spring 2022 - USFC's Philanthropy of the Year</Typography>
+              </ListItem>
+              <ListItem sx={{ padding: 0 }}>
+                <Typography sx={itemTextStyles}>
+                  Spring 2022 - USFC's Excellence in Unity & Belonging
+                </Typography>
+              </ListItem>
+            </List>
           </Grid>
         </Grid>
-      </Paper>
+      </Box>
 
       {/* Individual Recognition */}
-      <Paper elevation={2} style={sectionStyles}>
-        <Typography variant="h5" fontWeight="bold" gutterBottom>
-          Individual Recognition
-        </Typography>
-        <Grid container spacing={2}>
-          <Grid item xs={6}>
-            <ul>
-              <li>Sally Lee - Southern California aKDPhi IRIS Award Recipient, 2021</li>
-              <li>Sally Lee - USFC's Silent Leader of the Year, 2022</li>
-              <li>Anushree Parmar - USFC's Volunteer of the Year, 2022</li>
-              <li>Hannah Aksamit - USFC's Advisor of the Year, 2021</li>
-              <li>Samantha Koyama - USFC's President of the Year, 2021</li>
-            </ul>
-          </Grid>
-          <Grid item xs={6}>
-            <ul>
-              <li>Michelle Shuen - Southern California aKDPhi IRIS Award Recipient, 2020</li>
-              <li>Nami Saito - FSL Standards of Excellence: Chapter President of the Year</li>
-              <li>Kathy Ly - Honorary Award: Inspiring Role Model</li>
-              <li>Megan Morimoto - In Recognition of Inspirational Sisterhood (I.R.I.S award)</li>
-            </ul>
-          </Grid>
-        </Grid>
-      </Paper>
+      <Box>
+        <Typography sx={sectionTitleStyles}>Individual Recognition</Typography>
+        <Box sx={{ marginTop: '20px' }}>
+          <Typography sx={itemTextStyles}>
+            Sally Lee - Southern California aKDPhi IRIS Award Recipient, 2021
+          </Typography>
+          <Typography sx={itemTextStyles}>
+            Anushree Parmar - USFC's Volunteer of the Year, 2022
+          </Typography>
+          <Typography sx={itemTextStyles}>
+            Joanna Vo - FSL Standards of Excellence: New Member of the Year
+          </Typography>
+        </Box>
+      </Box>
     </Box>
   );
 }
