@@ -12,7 +12,7 @@ export default function Footer() {
         backgroundColor: 'background.paper',
         textAlign: 'center',
         py: 4,
-        borderTop: '1px solid #E0E0E0',
+        // borderTop: '1px solid #E0E0E0',
       }}
     >
       <Typography variant="h6" fontWeight="bold">
