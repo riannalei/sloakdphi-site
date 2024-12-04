@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #F4F4F9; /* Light Background */
+  color: #212121; /* Dark Text */
+}
+
+h1, h2, h3 {
+  color: #5E3DBB; /* Purple */
+}
