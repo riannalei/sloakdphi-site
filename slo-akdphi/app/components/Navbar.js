@@ -28,11 +28,38 @@ export default function Navbar() {
   };
 
   return (
-    <AppBar position="sticky" color="transparent" elevation={0}>
-      <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <Box sx={{ textAlign: 'left' }}>
-          <Typography variant="h6" fontWeight="bold">CAL POLY aKDPhi</Typography>
-          <Typography variant="subtitle2" sx={{ color: 'text.secondary', fontSize: '0.9rem', marginTop: '-5px' }}>
+    <AppBar
+      position="sticky"
+      sx={{
+        backgroundColor: '#f9f9f7',
+        boxShadow: 'none',
+        // borderBottom: '1px solid #e0e0e0',
+        padding: '10px 20px',
+      }}
+    >
+      <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
+        <Box>
+          <Typography
+            variant="h6"
+            fontWeight="bold"
+            sx={{
+              fontSize: '1.5rem',
+              color: '#6b625a',
+              fontFamily: 'Inter, Arial, sans-serif',
+              letterSpacing: '0.05em',
+            }}
+          >
+            CAL POLY aKDPhi
+          </Typography>
+          <Typography
+            variant="subtitle2"
+            sx={{
+              fontSize: '1rem',
+              color: '#6b625a',
+              marginTop: '-5px',
+              fontFamily: 'Inter, Arial, sans-serif',
+            }}
+          >
             Omicron Chapter
           </Typography>
         </Box>
@@ -40,7 +67,16 @@ export default function Navbar() {
           value={value}
           onChange={handleChange}
           textColor="primary"
-          TabIndicatorProps={{ style: { backgroundColor: '#DCCFF9' } }}
+          TabIndicatorProps={{ style: { backgroundColor: '#dccff9' } }}
+          sx={{
+            '& .MuiTab-root': {
+              fontWeight: 600,
+              fontSize: '1rem',
+              color: '#6b625a',
+              fontFamily: 'Inter, Arial, sans-serif',
+              textTransform: 'none',
+            },
+          }}
         >
           <Tab label="HOME" />
           <Tab label="ABOUT" />
