@@ -81,7 +81,7 @@ export default function AboutPage() {
   };
 
   return (
-    <Box sx={{ padding: '10px 0px', backgroundColor: '#ffffff', minHeight: '100vh' }}>
+    <Box sx={{ padding: '5px 0px', backgroundColor: '#ffffff', minHeight: '100vh' }}>
       {/* Chapter President's Welcome Letter */}
       <Box sx={containerStyles}>
         <Typography sx={sectionTitleStyles}>A Note From Our President</Typography>
