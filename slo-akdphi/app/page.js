@@ -22,7 +22,7 @@ export default function HomePage() {
 
   const containerStyles = {
     backgroundColor: '#f9f9f7', // Matches earlier modal background
-    borderRadius: '8px',
+    borderRadius: '12px',
     padding: '40px',
     margin: '30px auto 30px', // Adds spacing below modal
     maxWidth: '2000px',
@@ -41,40 +41,49 @@ export default function HomePage() {
   }}
 >
 
-      {/* Background Image */}
-      <Box
-        component="img"
-        src="/homepage/housepic.jpg" // Replace with the actual path to your image
-        alt="Omicron Chapter"
-        sx={{
-          width: '100%',
-          height: '60vh',
-          objectFit: 'cover',
-          position: 'relative',
-        }}
-      />
+<Box
+  component="div"
+  sx={{
+    position: 'relative', // Ensures text positions relative to this container
+    width: '100%',
+    height: '60vh', // Same height as the image
+    overflow: 'hidden',
+  }}
+>
+  {/* Background Image */}
+  <Box
+    component="img"
+    src="/homepage/housepic.jpg" // Replace with the actual path to your image
+    alt="Omicron Chapter"
+    sx={{
+      width: '100%',
+      height: '100%',
+      objectFit: 'cover',
+    }}
+  />
 
-      {/* Centered Title Over Image */}
-      <Box
-        sx={{
-          position: 'absolute',
-          top: '25%',
-          left: '50%',
-          transform: 'translate(-50%, -50%)',
-          textAlign: 'center',
-          color: '#fff',
-        }}
-      >
-        <Typography
-          sx={{
-            fontSize: '3rem',
-            fontWeight: 700,
-            letterSpacing: '0.1em',
-          }}
-        >
-          Omicron Chapter
-        </Typography>
-      </Box>
+  {/* Centered Title Over Image */}
+  <Box
+    sx={{
+      position: 'absolute',
+      top: '50%', // Vertically center
+      left: '50%', // Horizontally center
+      transform: 'translate(-50%, -50%)', // Adjust for perfect centering
+      textAlign: 'center',
+      color: '#f9f9f7', // Light text color
+    }}
+  >
+    <Typography
+      sx={{
+        fontSize: '2rem', // Smaller font size
+        fontWeight: 600,
+        letterSpacing: '0.1em',
+      }}
+    >
+      Omicron Chapter
+    </Typography>
+  </Box>
+</Box>
 
       {/* Main Content - Chapter Info */}
       <Box sx={containerStyles}>
