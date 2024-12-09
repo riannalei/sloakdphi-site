@@ -24,7 +24,7 @@ export default function AboutPage() {
 
   const containerStyles = {
     backgroundColor: '#f9f9f7',
-    borderRadius: '8px',
+    borderRadius: '12px',
     padding: '40px',
     margin: '40px auto',
     maxWidth: '2000px',

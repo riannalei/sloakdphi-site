@@ -1,7 +1,10 @@
 {
   "dependencies": {
     "@emotion/react": "^11.13.5",
+    "@emotion/server": "^11.11.0",
     "@emotion/styled": "^11.13.5",
-    "@mui/icons-material": "^6.1.9"
+    "@mui/icons-material": "^6.1.9",
+    "react-slick": "^0.30.2",
+    "slick-carousel": "^1.8.1"
   }
 }
