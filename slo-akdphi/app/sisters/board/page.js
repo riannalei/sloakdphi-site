@@ -1,10 +1,17 @@
+'use client';
+
+import React from 'react';
+import { Box, Typography } from '@mui/material';
+
 export default function BoardPage() {
-    return (
-      <div style={{ padding: '2rem', textAlign: 'center' }}>
-        <h1>E-Board & Cabinet</h1>
-        <p>Meet the E-Board & Cabinet of CAL POLY aKDPhi.</p>
-        {/* Add more content about the E-Board & Cabinet */}
-      </div>
-    );
-  }
-  
+  return (
+    <Box sx={{ padding: '2rem', textAlign: 'center' }}>
+      <Typography variant="h4" sx={{ fontWeight: 700, color: '#6b625a', marginBottom: '1rem' }}>
+        E-Board & Cabinet
+      </Typography>
+      <Typography sx={{ fontSize: '1.2rem', color: '#6b625a' }}>
+        Information about the E-Board & Cabinet will be displayed here.
+      </Typography>
+    </Box>
+  );
+}

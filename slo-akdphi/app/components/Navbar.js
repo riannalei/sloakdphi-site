@@ -15,14 +15,18 @@ export default function Navbar() {
       '/about': 1,
       '/awards': 2,
       '/recruitment': 3,
-      '/sisters': 4,
       '/connect': 5,
     };
-    setValue(pathToIndex[pathname] || 0);
+
+    // Check if the path starts with `/sisters` to highlight the SISTERS tab
+    if (pathname.startsWith('/sisters')) {
+      setValue(4);
+    } else {
+      setValue(pathToIndex[pathname] ?? 0); // Default to 0 if no match
+    }
   }, [pathname]);
 
   const handleChange = (event, newValue) => {
-    setValue(newValue);
     const paths = ['/', '/about', '/awards', '/recruitment', '/sisters', '/connect'];
     router.push(paths[newValue]);
   };
@@ -33,7 +37,6 @@ export default function Navbar() {
       sx={{
         backgroundColor: '#f9f9f7',
         boxShadow: 'none',
-        // borderBottom: '1px solid #e0e0e0',
         padding: '10px 20px',
       }}
     >
