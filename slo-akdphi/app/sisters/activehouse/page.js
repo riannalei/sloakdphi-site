@@ -1,17 +1,361 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Box, Typography } from '@mui/material';
+import dynamic from 'next/dynamic';
+import { useRouter } from 'next/navigation';
+import 'react-multi-carousel/lib/styles.css';
+
+// Dynamically import Carousel to prevent SSR issues
+const Carousel = dynamic(() => import('react-multi-carousel'), { ssr: false });
+
+// Example Arrows that remove 'carouselState' prop before passing rest to DOM
+const CustomLeftArrow = ({ onClick, carouselState, rtl, ...rest }) => {
+  // Destructure and remove `rtl` from the props so it never hits the DOM.
+  const { rtl: _rtl, ...arrowProps } = rest; 
+  return (
+    <div
+      {...arrowProps}
+      onClick={onClick}
+      style={{
+        position: 'absolute',
+        left: '5px',
+        top: '50%',
+        transform: 'translateY(-50%)',
+        background: '#dccff9',
+        width: '40px',
+        height: '40px',
+        borderRadius: '50%',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        cursor: 'pointer',
+        transition: 'background 0.3s',
+      }}
+      onMouseEnter={(e) => (e.currentTarget.style.background = '#bcb2f3')}
+      onMouseLeave={(e) => (e.currentTarget.style.background = '#dccff9')}
+    >
+      <span style={{ color: '#6b625a', fontSize: '18px' }}>{'<'}</span>
+    </div>
+  );
+};
+
+const CustomRightArrow = ({ onClick, carouselState, rtl, ...rest }) => {
+  // Same here: remove `rtl` from the props.
+  const { rtl: _rtl, ...arrowProps } = rest;
+  return (
+    <div
+      {...arrowProps}
+      onClick={onClick}
+      style={{
+        position: 'absolute',
+        right: '5px',
+        top: '50%',
+        transform: 'translateY(-50%)',
+        background: '#dccff9',
+        width: '40px',
+        height: '40px',
+        borderRadius: '50%',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        cursor: 'pointer',
+        transition: 'background 0.3s',
+      }}
+      onMouseEnter={(e) => (e.currentTarget.style.background = '#bcb2f3')}
+      onMouseLeave={(e) => (e.currentTarget.style.background = '#dccff9')}
+    >
+      <span style={{ color: '#6b625a', fontSize: '18px' }}>{'>'}</span>
+    </div>
+  );
+};
+
+const sectionTitleStyles = {
+  fontSize: '2rem',
+  fontWeight: 700,
+  color: '#6b625a',
+  letterSpacing: '0.1em',
+  marginBottom: '20px',
+  textAlign: 'center',
+};
+
+const subTextStyles = {
+  fontSize: '1.2rem',
+  color: '#6b625a',
+  lineHeight: '1.6',
+  textAlign: 'center',
+  maxWidth: '800px',
+  margin: '0 auto',
+};
+
+const classes = [
+  {
+    title: "Fall '24",
+    subtitle: 'alpha nu',
+    sisters: [
+      {
+        id: '#169',
+        nickname: 'S.W.A.N.',
+        name: 'Abigail',
+        lastName: 'Jaromay',
+        photo: '/sisters/sister.jpg',
+      },
+      {
+        id: '#169',
+        nickname: 'S.W.A.N.',
+        name: 'Abigail',
+        lastName: 'Jaromay',
+        photo: '/sisters/sister.jpg',
+      },
+      {
+        id: '#170',
+        nickname: 'P.U.R.R.',
+        name: 'Sara',
+        lastName: 'Stone',
+        photo: '/sisters/sister.jpg',
+      },
+      {
+        id: '#169',
+        nickname: 'S.W.A.N.',
+        name: 'Abigail',
+        lastName: 'Jaromay',
+        photo: '/sisters/sister.jpg',
+      },
+      {
+        id: '#169',
+        nickname: 'S.W.A.N.',
+        name: 'Abigail',
+        lastName: 'Jaromay',
+        photo: '/sisters/sister.jpg',
+      },
+    ],
+  },
+  {
+    title: "Winter '24",
+    subtitle: 'alpha mu',
+    sisters: [
+      {
+        id: '#169',
+        nickname: 'S.W.A.N.',
+        name: 'Abigail',
+        lastName: 'Jaromay',
+        photo: '/sisters/sister.jpg',
+      },
+      {
+        id: '#169',
+        nickname: 'S.W.A.N.',
+        name: 'Abigail',
+        lastName: 'Jaromay',
+        photo: '/sisters/sister.jpg',
+      },
+    ],
+  },
+  {
+    title: "Fall '23",
+    subtitle: 'alpha lambda',
+    sisters: [
+      {
+        id: '#169',
+        nickname: 'S.W.A.N.',
+        name: 'Abigail',
+        lastName: 'Jaromay',
+        photo: '/sisters/sister.jpg',
+      },
+      {
+        id: '#169',
+        nickname: 'S.W.A.N.',
+        name: 'Abigail',
+        lastName: 'Jaromay',
+        photo: '/sisters/sister.jpg',
+      },
+    ],
+  },
+  {
+    title: "Fall '22",
+    subtitle: 'alpha kappa',
+    sisters: [
+      {
+        id: '#169',
+        nickname: 'S.W.A.N.',
+        name: 'Abigail',
+        lastName: 'Jaromay',
+        photo: '/sisters/sister.jpg',
+      },
+    ],
+  },
+  {
+    title: "Fall '21",
+    subtitle: 'alpha iota',
+    sisters: [
+      {
+        id: '#169',
+        nickname: 'S.W.A.N.',
+        name: 'Abigail',
+        lastName: 'Jaromay',
+        photo: '/sisters/sister.jpg',
+      },
+    ],
+  },
+];
+
+const responsive = {
+  desktop: { breakpoint: { max: 3000, min: 1024 }, items: 3.8 },
+  tablet: { breakpoint: { max: 1024, min: 464 }, items: 2 },
+  mobile: { breakpoint: { max: 464, min: 0 }, items: 1 },
+};
 
 export default function ActiveHousePage() {
+  const [isClient, setIsClient] = useState(false);
+  const router = useRouter();
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) {
+    return <div suppressHydrationWarning>Loading...</div>;
+  }
+
   return (
-    <Box sx={{ padding: '2rem', textAlign: 'center' }}>
-      <Typography variant="h4" sx={{ fontWeight: 700, color: '#6b625a', marginBottom: '1rem' }}>
-        Active House
-      </Typography>
-      <Typography sx={{ fontSize: '1.2rem', color: '#6b625a' }}>
-        Details about the active house will be displayed here.
-      </Typography>
+    <Box
+      sx={{
+        padding: '1rem',
+        backgroundColor: '#f9f9f7',
+        maxWidth: '1200px',
+        margin: '0 auto',
+      }}
+    >
+      {/* Back to Sisters Button */}
+      <Box
+        onClick={() => router.push('/sisters')}
+        sx={{
+          position: 'fixed', // Ensures it's always visible at the top-left
+          top: '130px',
+          left: '60px',
+          zIndex: 1000,
+          width: '40px',
+          height: '40px',
+          backgroundColor: '#dccff9',
+          borderRadius: '50%',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          fontSize: '18px',
+          fontWeight: 'bold',
+          color: '#6b625a',
+          cursor: 'pointer',
+          '&:hover': {
+            backgroundColor: '#bcb2f3',
+          },
+        }}
+      >
+        {'<'}
+      </Box>
+
+      {/* Page Header */}
+      <Box sx={{ textAlign: 'center', marginBottom: '3rem' }}>
+        <Typography
+          variant="h4"
+          sx={sectionTitleStyles}
+        >
+          Active House
+        </Typography>
+        <Typography sx={subTextStyles}>
+          Winter 2025
+        </Typography>
+      </Box>
+
+      {/* Classes */}
+      {classes.map((classGroup, index) => (
+        <Box key={index} sx={{ marginBottom: '3rem' }}>
+          <Typography
+            variant="h5"
+            sx={{
+              ...sectionTitleStyles,
+              textAlign: 'left', // Align to left for titles
+              marginBottom: '10px',
+            }}
+          >
+            {classGroup.title}
+            <span
+              style={{
+                color: '#dccff9',
+                fontStyle: 'italic',
+                fontSize: '1.5rem',
+                marginLeft: '10px',
+              }}
+            >
+              {classGroup.subtitle}
+            </span>
+          </Typography>
+
+          {/* Carousel */}
+          <Box sx={{ position: 'relative', padding: '0 10px' }}>
+            <Carousel
+              responsive={responsive}
+              infinite
+              showDots={false}
+              customLeftArrow={<CustomLeftArrow />}
+              customRightArrow={<CustomRightArrow />}
+            >
+              {classGroup.sisters.map((sister, sisterIndex) => (
+                <Box
+                  key={sisterIndex}
+                  sx={{
+                    textAlign: 'center',
+                    padding: '0 10px',
+                    margin: '0 auto',
+                  }}
+                >
+                  <Box
+                    component="img"
+                    src={sister.photo}
+                    alt={sister.name}
+                    sx={{
+                      width: '240px',
+                      height: '240px',
+                      objectFit: 'cover',
+                      borderRadius: '8px',
+                      margin: '0 auto',
+                    }}
+                  />
+                  <Typography
+                    sx={{
+                      fontWeight: 700,
+                      color: '#6b625a',
+                      marginTop: '0.3rem',
+                    }}
+                  >
+                    {sister.id}
+                  </Typography>
+                  <Typography
+                    sx={{
+                      fontWeight: 600,
+                      color: '#dccff9',
+                      fontSize: '1rem',
+                      marginBottom: '0.2rem',
+                    }}
+                  >
+                    {sister.nickname}
+                  </Typography>
+                  <Typography
+                    sx={{
+                      fontWeight: 600,
+                      color: '#6b625a',
+                      fontSize: '1rem',
+                    }}
+                  >
+                    {sister.name}
+                  </Typography>
+                  <Typography sx={{ color: '#555', fontSize: '1rem' }}>
+                    {sister.lastName}
+                  </Typography>
+                </Box>
+              ))}
+            </Carousel>
+          </Box>
+        </Box>
+      ))}
     </Box>
   );
 }
