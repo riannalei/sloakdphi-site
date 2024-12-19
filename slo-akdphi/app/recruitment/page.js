@@ -3,7 +3,8 @@
 import React, { useState } from 'react';
 import { Box, Typography, Button, Link } from '@mui/material';
 import Slider from 'react-slick'; // For the slider functionality
-import "slick-carousel/slick/slick.css"; 
+import Image from 'next/image'; // For optimized images
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 // Reuse consistent styles
@@ -78,8 +79,8 @@ export default function RecruitmentPage() {
       {/* Page Title */}
       <Typography sx={sectionTitleStyles}>RUSH aKDPhi</Typography>
       <Typography sx={subTextStyles}>
-          Winter 2025 rush coming soon...
-        </Typography>
+        Winter 2025 rush coming soon...
+      </Typography>
 
       {/* WHY aKDPhi Section */}
       <Box sx={containerStyles}>
@@ -90,7 +91,7 @@ export default function RecruitmentPage() {
           pillars include sisterhood, scholarship, leadership, service, and Asian awareness.
         </Typography>
         <Typography sx={subTextStyles}>
-          We welcome all those interested to come out to rush aKDPhi this fall and see what we're all about. Info will be posted
+          We welcome all those interested to come out to rush aKDPhi this fall and see what we&apos;re all about. Info will be posted
           on our Instagram <Link href="https://www.instagram.com/sloakdphi" target="_blank">@sloakdphi</Link> when the time comes!
         </Typography>
       </Box>
@@ -98,15 +99,21 @@ export default function RecruitmentPage() {
       {/* Two Pictures Section */}
       <Box sx={containerStyles}>
         <Box sx={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
-          <img
+          <Image
             src="/recruitment/rush1.jpeg"
             alt="Picture 1"
-            style={{ borderRadius: '12px', maxWidth: '45%', height: 'auto' }}
+            layout="intrinsic"
+            width={500}
+            height={300}
+            style={{ borderRadius: '12px', objectFit: 'cover' }}
           />
-          <img
+          <Image
             src="/recruitment/rush1.jpeg"
             alt="Picture 2"
-            style={{ borderRadius: '12px', maxWidth: '45%', height: 'auto' }}
+            layout="intrinsic"
+            width={500}
+            height={300}
+            style={{ borderRadius: '12px', objectFit: 'cover' }}
           />
         </Box>
       </Box>
@@ -116,7 +123,7 @@ export default function RecruitmentPage() {
         <Typography sx={sectionTitleStyles}>Interested?</Typography>
         <Typography sx={subTextStyles}>
           Fill out our rush interest form and check out our Instagram below for rush event announcements/updates.
-          We can't wait to see you soon!
+          We can&apos;t wait to see you soon!
         </Typography>
         <Box sx={{ textAlign: 'center', marginTop: '20px' }}>
           <Button sx={buttonStyles} href="https://forms.google.com" target="_blank">
@@ -138,40 +145,39 @@ export default function RecruitmentPage() {
           sorority. You gain so many benefits from joining - an everlasting sisterhood where you will always have sisters to
           lean on.
         </Typography>
-        {/* Add more FAQ questions here */}
       </Box>
 
       {/* Past Rush Events Slider */}
-      {/* Past Rush Events Slider */}
-{/* Past Rush Events Slider */}
-{/* Past Rush Events Slider */}
-<Box sx={containerStyles}>
+      <Box sx={containerStyles}>
   <Typography sx={sectionTitleStyles}>Past Rush Events</Typography>
   <Slider {...sliderSettings}>
     {['fall22.PNG', 'fall23.png', 'winter23.png', 'winter24.jpeg'].map((fileName, index) => (
       <Box
         key={index}
         sx={{
-          display: 'flex', // Flexbox for centering
-          justifyContent: 'center', // Horizontally center
-          alignItems: 'center', // Vertically center
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          position: 'relative',
+          width: '100%',
+          aspectRatio: '16/9', // Optional, for consistency
           padding: '10px',
         }}
       >
-        <img
+        <Image
           src={`/recruitment/${fileName}`}
           alt={`Rush Event ${fileName}`}
+          fill
           style={{
-            maxWidth: '100%', // Ensure it doesn't overflow the container
-            maxHeight: '400px', // Set a max height to control container size
+            objectFit: 'contain',
             borderRadius: '12px',
           }}
+          unoptimized
         />
       </Box>
     ))}
   </Slider>
 </Box>
-
 
     </Box>
   );

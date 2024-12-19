@@ -3,18 +3,18 @@
 import React from 'react';
 import { Box, Typography, Grid, List, ListItem, Divider } from '@mui/material';
 
-export default function Awards() {
+export default function AwardsPage() {
   const sectionTitleStyles = {
     fontSize: '1.8rem',
     fontWeight: 700,
     marginBottom: '10px',
-    color: '#6b625a', // Similar to Rhode's font color
+    color: '#6b625a',
     letterSpacing: '0.05em',
   };
 
   const subTextStyles = {
     fontSize: '1rem',
-    color: '#6b625a', // Matches Rhode's font
+    color: '#6b625a',
     lineHeight: '1.5',
     marginBottom: '20px',
   };
@@ -27,11 +27,13 @@ export default function Awards() {
   };
 
   const containerStyles = {
-    backgroundColor: '#f9f9f7', // Slightly darker gray for modal
-    borderRadius: '8px',
+    backgroundColor: '#f9f9f7',
+    borderRadius: '12px',
     padding: '40px',
-    margin: '20px auto',
-    maxWidth: '900px',
+    margin: '40px auto',
+    maxWidth: '2000px',
+    width: '100%',
+    textAlign: 'center',
   };
 
   return (
@@ -39,7 +41,7 @@ export default function Awards() {
       sx={{
         padding: '0 20px',
         backgroundColor: '#ffffff',
-        minHeight: '100vh', // Ensure it fills the viewport height
+        minHeight: '100vh',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'flex-start',
@@ -75,15 +77,15 @@ export default function Awards() {
         <Box sx={containerStyles}>
           {/* Dean's List */}
           <Box sx={{ marginBottom: '40px' }}>
-            <Typography sx={sectionTitleStyles}>Dean's List</Typography>
+            <Typography sx={sectionTitleStyles}>Dean&apos;s List</Typography>
             <Typography sx={subTextStyles}>
               Congratulations to our sisters who achieved a GPA of 3.50 or higher in the 2023-2024 school year!
             </Typography>
             <Box>
-              <Typography sx={itemTextStyles}>Megan Morimoto: Dean’s List Fall 2023 & Winter 2024</Typography>
-              <Typography sx={itemTextStyles}>Haley Hoang: Dean’s List Fall 2023</Typography>
-              <Typography sx={itemTextStyles}>Anh Tran: Dean’s List Fall 2024</Typography>
-              <Typography sx={itemTextStyles}>Sara Stone: Dean’s List Winter 2024</Typography>
+              <Typography sx={itemTextStyles}>Megan Morimoto: Dean&apos;s List Fall 2023 & Winter 2024</Typography>
+              <Typography sx={itemTextStyles}>Haley Hoang: Dean&apos;s List Fall 2023</Typography>
+              <Typography sx={itemTextStyles}>Anh Tran: Dean&apos;s List Fall 2024</Typography>
+              <Typography sx={itemTextStyles}>Sara Stone: Dean&apos;s List Winter 2024</Typography>
             </Box>
           </Box>
 
@@ -91,7 +93,7 @@ export default function Awards() {
 
           {/* Chapter's Scholarship Recognition */}
           <Box sx={{ marginBottom: '40px' }}>
-            <Typography sx={sectionTitleStyles}>Chapter's Scholarship Recognition</Typography>
+            <Typography sx={sectionTitleStyles}>Chapter&apos;s Scholarship Recognition</Typography>
             <Grid container spacing={4}>
               <Grid item xs={12} sm={6}>
                 <List>
@@ -149,13 +151,13 @@ export default function Awards() {
               <Grid item xs={12} sm={6}>
                 <List>
                   <ListItem>
-                    <Typography sx={itemTextStyles}>Spring 2022 - USFC's Academic Excellence Award</Typography>
+                    <Typography sx={itemTextStyles}>Spring 2022 - USFC&apos;s Academic Excellence Award</Typography>
                   </ListItem>
                   <ListItem>
-                    <Typography sx={itemTextStyles}>Spring 2022 - USFC's Philanthropy of the Year</Typography>
+                    <Typography sx={itemTextStyles}>Spring 2022 - USFC&apos;s Philanthropy of the Year</Typography>
                   </ListItem>
                   <ListItem>
-                    <Typography sx={itemTextStyles}>Spring 2022 - USFC's Excellence in Unity & Belonging</Typography>
+                    <Typography sx={itemTextStyles}>Spring 2022 - USFC&apos;s Excellence in Unity & Belonging</Typography>
                   </ListItem>
                 </List>
               </Grid>
@@ -172,7 +174,7 @@ export default function Awards() {
                 Sally Lee - Southern California aKDPhi IRIS Award Recipient, 2021
               </Typography>
               <Typography sx={itemTextStyles}>
-                Anushree Parmar - USFC's Volunteer of the Year, 2022
+                Anushree Parmar - USFC&apos;s Volunteer of the Year, 2022
               </Typography>
               <Typography sx={itemTextStyles}>
                 Joanna Vo - FSL Standards of Excellence: New Member of the Year
