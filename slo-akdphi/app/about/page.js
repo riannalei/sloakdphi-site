@@ -104,17 +104,28 @@ export default function AboutPage() {
   <Grid container spacing={4}>
     {/* Left Image */}
     <Grid item xs={12} sm={6}>
-      <Box
-        component="img"
-        src={pillarDescriptions[activePillar].image}
-        alt={pillarDescriptions[activePillar].title}
-        sx={{
-          width: '100%',
-          height: 'auto',
-          borderRadius: '8px',
-          backgroundColor: '#eaeaea',
-        }}
-      />
+    <Box
+  sx={{
+    width: '100%',
+    height: '400px', // Fixed height for the container
+    borderRadius: '12px', // Rounded corners for the container
+    overflow: 'hidden', // Ensures the image doesn't overflow
+  }}
+>
+  <Box
+    component="img"
+    src={pillarDescriptions[activePillar].image}
+    alt={pillarDescriptions[activePillar].title}
+    sx={{
+      width: '100%',
+      height: '100%',
+      objectFit: 'cover', // Ensures the image covers the container completely
+    }}
+  />
+</Box>
+
+
+
     </Grid>
 
     {/* Right Interactive Section */}
