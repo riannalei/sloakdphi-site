@@ -99,12 +99,12 @@ export default function RecruitmentPage() {
       <Box sx={containerStyles}>
         <Box sx={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
           <img
-            src="/example-image-1.jpg"
+            src="/recruitment/rush1.jpeg"
             alt="Picture 1"
             style={{ borderRadius: '12px', maxWidth: '45%', height: 'auto' }}
           />
           <img
-            src="/example-image-2.jpg"
+            src="/recruitment/rush1.jpeg"
             alt="Picture 2"
             style={{ borderRadius: '12px', maxWidth: '45%', height: 'auto' }}
           />
@@ -142,20 +142,37 @@ export default function RecruitmentPage() {
       </Box>
 
       {/* Past Rush Events Slider */}
-      <Box sx={containerStyles}>
-        <Typography sx={sectionTitleStyles}>Past Rush Events</Typography>
-        <Slider {...sliderSettings}>
-          {[...Array(6)].map((_, i) => (
-            <Box key={i} sx={{ padding: '10px' }}>
-              <img
-                src={`/rush-event-${i + 1}.jpg`}
-                alt={`Rush Event ${i + 1}`}
-                style={{ width: '100%', borderRadius: '12px' }}
-              />
-            </Box>
-          ))}
-        </Slider>
+      {/* Past Rush Events Slider */}
+{/* Past Rush Events Slider */}
+{/* Past Rush Events Slider */}
+<Box sx={containerStyles}>
+  <Typography sx={sectionTitleStyles}>Past Rush Events</Typography>
+  <Slider {...sliderSettings}>
+    {['fall22.PNG', 'fall23.png', 'winter23.png', 'winter24.jpeg'].map((fileName, index) => (
+      <Box
+        key={index}
+        sx={{
+          display: 'flex', // Flexbox for centering
+          justifyContent: 'center', // Horizontally center
+          alignItems: 'center', // Vertically center
+          padding: '10px',
+        }}
+      >
+        <img
+          src={`/recruitment/${fileName}`}
+          alt={`Rush Event ${fileName}`}
+          style={{
+            maxWidth: '100%', // Ensure it doesn't overflow the container
+            maxHeight: '400px', // Set a max height to control container size
+            borderRadius: '12px',
+          }}
+        />
       </Box>
+    ))}
+  </Slider>
+</Box>
+
+
     </Box>
   );
 }

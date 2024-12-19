@@ -53,7 +53,7 @@ export default function HomePage() {
   {/* Background Image */}
   <Box
     component="img"
-    src="/homepage/housepic.jpg" // Replace with the actual path to your image
+    src="/homepage/sea.gif" // Replace with the actual path to your image
     alt="Omicron Chapter"
     sx={{
       width: '100%',
