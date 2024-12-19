@@ -52,31 +52,31 @@ export default function AboutPage() {
       title: 'Sisterhood',
       description:
         'By joining alpha Kappa Delta Phi, sisters form lifelong relationships. Sisterhood gives us a strong support system for personal, professional, or academic pursuits.',
-      image: '/path/to/sisterhood-image.jpg',
+      image: '/about/about2.jpg',
     },
     leadership: {
       title: 'Leadership',
       description:
         'We encourage members to explore leadership by taking officer roles, challenging themselves, and building confidence and communication skills.',
-      image: '/path/to/leadership-image.jpg',
+      image: '/about/about.jpg',
     },
     scholarship: {
       title: 'Scholarship',
       description:
         'We prioritize academics with strong support networks, study hours, and resources. Our sisters excel academically while pursuing their goals.',
-      image: '/path/to/scholarship-image.jpg',
+      image: '/about/about2.jpg',
     },
     service: {
       title: 'Service',
       description:
         'We focus on community service, with a national emphasis on Breast Cancer Awareness and local efforts to aid the Asian American community.',
-      image: '/path/to/service-image.jpg',
+      image: '/about/about.jpg',
     },
     awareness: {
       title: 'Asian Awareness',
       description:
         'We promote Asian Awareness through events like PolyCultural Weekend, Culture Fest, and more, welcoming members from all backgrounds.',
-      image: '/path/to/awareness-image.jpg',
+      image: '/about/about2.jpg',
     },
   };
 
