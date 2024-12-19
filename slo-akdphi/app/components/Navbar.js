@@ -12,23 +12,23 @@ export default function Navbar() {
   useEffect(() => {
     const pathToIndex = {
       '/': 0,
-      '/about': 1,
-      '/awards': 2,
-      '/recruitment': 3,
-      '/connect': 5,
+      '/about/': 1,
+      '/awards/': 2,
+      '/recruitment/': 3,
+      '/sisters/': 4,
+      '/connect/': 5,
     };
 
-    // Check if the path starts with `/sisters` to highlight the SISTERS tab
     if (pathname.startsWith('/sisters')) {
-      setValue(4);
+      setValue(4); // Handle SISTERS separately
     } else {
-      setValue(pathToIndex[pathname] ?? 0); // Default to 0 if no match
+      setValue(pathToIndex[pathname] ?? 0); // Default to HOME if no match
     }
   }, [pathname]);
 
   const handleChange = (event, newValue) => {
-    const paths = ['/', '/about', '/awards', '/recruitment', '/sisters', '/connect'];
-    router.push(paths[newValue]);
+    const paths = ['/', '/about/', '/awards/', '/recruitment/', '/sisters/', '/connect/'];
+    router.push(paths[newValue]); // Always navigate
   };
 
   return (
