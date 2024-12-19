@@ -104,10 +104,12 @@ export default function AboutPage() {
   <Grid container spacing={4}>
     {/* Left Image */}
     <Grid item xs={12} sm={6}>
+
+  {/* BOX FIX LATER */}
     <Box
   sx={{
     width: '100%',
-    height: '400px', // Fixed height for the container
+    height: '500px', // Fixed height for the container
     borderRadius: '12px', // Rounded corners for the container
     overflow: 'hidden', // Ensures the image doesn't overflow
   }}
@@ -123,8 +125,6 @@ export default function AboutPage() {
     }}
   />
 </Box>
-
-
 
     </Grid>
 
