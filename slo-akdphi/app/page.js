@@ -5,19 +5,30 @@ import { Box, Typography, Button } from '@mui/material';
 
 export default function HomePage() {
   const buttonStyles = {
+    backgroundColor: '#6b625a',
+    color: '#fff',
+    padding: '10px 20px',
+    borderRadius: '24px',
     marginTop: '30px',
-    backgroundColor: 'transparent', // No background
-    color: '#6b625a', // Matches earlier text color
-    border: '1px solid #6b625a', // Outline only
-    borderRadius: '30px',
-    padding: '10px 30px',
-    textTransform: 'uppercase',
-    fontSize: '1rem',
-    fontWeight: '600',
+    fontWeight: 600,
+    marginRight: '10px',
     '&:hover': {
-      backgroundColor: '#6b625a', // Add background on hover
-      color: '#fff', // Text color on hover
+      backgroundColor: '#4a4944',
     },
+  // const buttonStyles = {
+  //   marginTop: '30px',
+  //   backgroundColor: 'transparent', // No background
+  //   color: '#6b625a', // Matches earlier text color
+  //   border: '1px solid #6b625a', // Outline only
+  //   borderRadius: '30px',
+  //   padding: '10px 30px',
+  //   textTransform: 'uppercase',
+  //   fontSize: '1rem',
+  //   fontWeight: '600',
+  //   '&:hover': {
+  //     backgroundColor: '#6b625a', // Add background on hover
+  //     color: '#fff', // Text color on hover
+  //   },
   };
 
   const containerStyles = {
