@@ -204,7 +204,7 @@ const classes = [
       },
       {
         id: '#161',
-        nickname: 'G.L.O.W',
+        nickname: 'G.L.O.W.',
         name: 'Rianna',
         lastName: 'Lei',
         photo: '/sisters/sister.jpg',
