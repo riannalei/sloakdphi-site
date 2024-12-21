@@ -86,7 +86,7 @@ export default function RecruitmentPage() {
       <Box sx={containerStyles}>
         <Typography sx={sectionTitleStyles}>WHY aKDPhi?</Typography>
         <Typography sx={subTextStyles}>
-          αΚΔΦ (aKDPhi, or alpha Kappa Delta Phi) is the largest and only international Asian-American interest sorority.
+          &alpha;&Kappa;&Delta;&Phi; (aKDPhi, or alpha Kappa Delta Phi) is the largest and only international Asian-American interest sorority.
           With nearly 60 active chapters, there is a huge network and support for every sister of aKDPhi. Our five
           pillars include sisterhood, scholarship, leadership, service, and Asian awareness.
         </Typography>
@@ -137,78 +137,77 @@ export default function RecruitmentPage() {
 
       {/* Past Rush Events Slider */}
       <Box sx={containerStyles}>
-  <Typography sx={sectionTitleStyles}>Past Rush Events</Typography>
-  <Slider {...sliderSettings}>
-    {['fall22.PNG', 'fall23.png', 'winter23.png', 'winter24.jpeg'].map((fileName, index) => (
-      <Box
-        key={index}
-        sx={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          position: 'relative',
-          width: '100%',
-          aspectRatio: '16/9', // Optional, for consistency
-          padding: '10px',
-        }}
-      >
-        <Image
-          src={`/recruitment/${fileName}`}
-          alt={`Rush Event ${fileName}`}
-          fill
-          style={{
-            objectFit: 'contain',
-            borderRadius: '12px',
-          }}
-          unoptimized
-        />
+        <Typography sx={sectionTitleStyles}>Past Rush Events</Typography>
+        <Slider {...sliderSettings}>
+          {['fall22.PNG', 'fall23.png', 'winter23.png', 'winter24.jpeg'].map((fileName, index) => (
+            <Box
+              key={index}
+              sx={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                position: 'relative',
+                width: '100%',
+                aspectRatio: '16/9',
+                padding: '10px',
+              }}
+            >
+              <Image
+                src={`/recruitment/${fileName}`}
+                alt={`Rush Event ${fileName}`}
+                fill
+                style={{
+                  objectFit: 'contain',
+                  borderRadius: '12px',
+                }}
+                unoptimized
+              />
+            </Box>
+          ))}
+        </Slider>
       </Box>
-    ))}
-  </Slider>
-</Box>
 
-{/* FAQ Section */}
-<Box sx={containerStyles}>
-  <Typography sx={sectionTitleStyles}>Frequently Asked Questions</Typography>
-  <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: 4 }}>
-    {/* Column 1 */}
-    <Box sx={{ flex: '1 1 48%', minWidth: '300px' }}>
-      <Typography sx={{ ...subTextStyles, fontSize: '0.875rem', mb: 2 }}>
-        <strong>Why alpha Kappa Delta Phi?</strong><br />
-        alpha Kappa Delta Phi at Cal Poly is the largest and only international Asian-Interest Sorority on campus. With 60 chapters across the US & Canada, it offers lifelong sisterhood, leadership opportunities, and memorable experiences, along with the chance to give back through service and philanthropic events.
-      </Typography>
-      <Typography sx={{ ...subTextStyles, fontSize: '0.875rem', mb: 2 }}>
-        <strong>What is rush?</strong><br />
-        Rush is a week-long period, typically during Fall or Winter Quarter, where students can learn about aKDPhi, meet members, and experience Greek life through fun events. There&apos;s no obligation to join, and it&apos;s free.
-      </Typography>
-      <Typography sx={{ ...subTextStyles, fontSize: '0.875rem', mb: 2 }}>
-        <strong>What should I expect at a rush event?</strong><br />
-        Rush Week events give you the opportunity to meet our sisters and get to know what makes aKDPhi unique. These casual and welcoming events allow you to ask questions, meet new people, and learn more about the sorority in a relaxed environment.
-      </Typography>
-    </Box>
+      {/* FAQ Section */}
+      <Box sx={containerStyles}>
+        <Typography sx={sectionTitleStyles}>Frequently Asked Questions</Typography>
+        <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: 4 }}>
+          {/* Column 1 */}
+          <Box sx={{ flex: '1 1 48%', minWidth: '300px' }}>
+            <Typography sx={{ ...subTextStyles, fontSize: '0.875rem', mb: 2 }}>
+              <strong>Why alpha Kappa Delta Phi?</strong><br />
+              alpha Kappa Delta Phi at Cal Poly is the largest and only international Asian-Interest Sorority on campus. With 60 chapters across the US &amp; Canada, it offers lifelong sisterhood, leadership opportunities, and memorable experiences, along with the chance to give back through service and philanthropic events.
+            </Typography>
+            <Typography sx={{ ...subTextStyles, fontSize: '0.875rem', mb: 2 }}>
+              <strong>What is rush?</strong><br />
+              Rush is a week-long period, typically during Fall or Winter Quarter, where students can learn about aKDPhi, meet members, and experience Greek life through fun events. There&apos;s no obligation to join, and it&apos;s free.
+            </Typography>
+            <Typography sx={{ ...subTextStyles, fontSize: '0.875rem', mb: 2 }}>
+              <strong>What should I expect at a rush event?</strong><br />
+              Rush Week events give you the opportunity to meet our sisters and get to know what makes aKDPhi unique. These casual and welcoming events allow you to ask questions, meet new people, and learn more about the sorority in a relaxed environment.
+            </Typography>
+          </Box>
 
-    {/* Column 2 */}
-    <Box sx={{ flex: '1 1 48%', minWidth: '300px' }}>
-      <Typography sx={{ ...subTextStyles, fontSize: '0.875rem', mb: 2 }}>
-        <strong>How do I "rush"?</strong><br />
-        Attend one or more rush events during Rush Week. Details can be found on our rush flyer or Instagram.
-      </Typography>
-      <Typography sx={{ ...subTextStyles, fontSize: '0.875rem', mb: 2 }}>
-        <strong>Do I have to be Asian?</strong><br />
-        aKDPhi is open to everyone! While we emphasize Asian Awareness, we celebrate diversity and welcome members from all backgrounds.
-      </Typography>
-      <Typography sx={{ ...subTextStyles, fontSize: '0.875rem', mb: 2 }}>
-        <strong>Will rushing cost me anything?</strong><br />
-        No, rushing aKDPhi is completely free! Food, transportation, and events are covered by the sorority.
-      </Typography>
-      <Typography sx={{ ...subTextStyles, fontSize: '0.875rem', mb: 2 }}>
-        <strong>What is after rush?</strong><br />
-        After rush, you can sign up for an interview. If you&apos;re offered a bid and accept, you&apos;ll begin the new member process, which introduces you to the traditions and history of aKDPhi while building strong bonds with your class and actives.
-      </Typography>
-    </Box>
-  </Box>
-</Box>
-
+          {/* Column 2 */}
+          <Box sx={{ flex: '1 1 48%', minWidth: '300px' }}>
+            <Typography sx={{ ...subTextStyles, fontSize: '0.875rem', mb: 2 }}>
+              <strong>How do I &quot;rush&quot;?</strong><br />
+              Attend one or more rush events during Rush Week. Details can be found on our rush flyer or Instagram.
+            </Typography>
+            <Typography sx={{ ...subTextStyles, fontSize: '0.875rem', mb: 2 }}>
+              <strong>Do I have to be Asian?</strong><br />
+              aKDPhi is open to everyone! While we emphasize Asian Awareness, we celebrate diversity and welcome members from all backgrounds.
+            </Typography>
+            <Typography sx={{ ...subTextStyles, fontSize: '0.875rem', mb: 2 }}>
+              <strong>Will rushing cost me anything?</strong><br />
+              No, rushing aKDPhi is completely free! Food, transportation, and events are covered by the sorority.
+            </Typography>
+            <Typography sx={{ ...subTextStyles, fontSize: '0.875rem', mb: 2 }}>
+              <strong>What is after rush?</strong><br />
+              After rush, you can sign up for an interview. If you&apos;re offered a bid and accept, you&apos;ll begin the new member process, which introduces you to the traditions and history of aKDPhi while building strong bonds with your class and actives.
+            </Typography>
+          </Box>
+        </Box>
+      </Box>
     </Box>
   );
 }

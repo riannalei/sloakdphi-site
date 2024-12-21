@@ -145,7 +145,7 @@ export default function HomePage() {
             margin: '0 auto',
           }}
         >
-          Our Winter 2025 Rush is coming soon! Stay tuned for updates and get ready to learn more about alpha Kappa Delta Phi. We can't wait to meet you!
+          Our Winter 2025 Rush is coming soon! Stay tuned for updates and get ready to learn more about alpha Kappa Delta Phi. We can&apos;t wait to meet you!
         </Typography>
         <Button
           variant="contained"
