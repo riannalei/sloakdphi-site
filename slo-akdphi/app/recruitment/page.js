@@ -179,7 +179,7 @@ export default function RecruitmentPage() {
       </Typography>
       <Typography sx={{ ...subTextStyles, fontSize: '0.875rem', mb: 2 }}>
         <strong>What is rush?</strong><br />
-        Rush is a week-long period, typically during Fall or Winter Quarter, where students can learn about aKDPhi, meet members, and experience Greek life through fun events. There’s no obligation to join, and it’s free.
+        Rush is a week-long period, typically during Fall or Winter Quarter, where students can learn about aKDPhi, meet members, and experience Greek life through fun events. There&apos;s no obligation to join, and it&apos;s free.
       </Typography>
       <Typography sx={{ ...subTextStyles, fontSize: '0.875rem', mb: 2 }}>
         <strong>What should I expect at a rush event?</strong><br />
@@ -203,7 +203,7 @@ export default function RecruitmentPage() {
       </Typography>
       <Typography sx={{ ...subTextStyles, fontSize: '0.875rem', mb: 2 }}>
         <strong>What is after rush?</strong><br />
-        After rush, you can sign up for an interview. If you’re offered a bid and accept, you’ll begin the new member process, which introduces you to the traditions and history of aKDPhi while building strong bonds with your class and actives.
+        After rush, you can sign up for an interview. If you&apos;re offered a bid and accept, you&apos;ll begin the new member process, which introduces you to the traditions and history of aKDPhi while building strong bonds with your class and actives.
       </Typography>
     </Box>
   </Box>
