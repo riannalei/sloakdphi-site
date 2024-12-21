@@ -115,7 +115,6 @@ export default function AboutPage() {
           {/* Right Interactive Section */}
           <Grid item xs={12} sm={6}>
             <Box sx={{ textAlign: 'left', height: '220px', overflowY: 'auto' }}>
-              {/* Title */}
               <Typography
                 sx={{
                   fontSize: '2rem',
@@ -127,8 +126,6 @@ export default function AboutPage() {
               >
                 {pillarDescriptions[activePillar].title}
               </Typography>
-
-              {/* Description */}
               <Typography
                 sx={{
                   fontSize: '1rem',
@@ -140,8 +137,6 @@ export default function AboutPage() {
                 {pillarDescriptions[activePillar].description}
               </Typography>
             </Box>
-
-            {/* Interactive Links */}
             <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
               {Object.keys(pillarDescriptions).map((pillar, index) => (
                 <React.Fragment key={pillar}>
@@ -185,7 +180,7 @@ export default function AboutPage() {
         <Box sx={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto' }}>
           <Typography sx={subTextStyles}><strong>Purpose:</strong> The purpose of alpha Kappa Delta Phi is to promote sisterhood, scholarship, leadership, and Asian Awareness in the University and community.</Typography>
           <Typography sx={subTextStyles}><strong>Creed:</strong> Love and Friendship</Typography>
-          <Typography sx={subTextStyles}><strong>Motto:</strong> "Timeless Friendship Through Sisterhood"</Typography>
+          <Typography sx={subTextStyles}><strong>Motto:</strong> &quot;Timeless Friendship Through Sisterhood&quot;</Typography>
           <Typography sx={subTextStyles}><strong>Colors:</strong> Purple and White</Typography>
           <Typography sx={subTextStyles}><strong>Symbol:</strong> Hourglass</Typography>
           <Typography sx={subTextStyles}><strong>Stone:</strong> Diamond</Typography>

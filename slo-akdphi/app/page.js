@@ -15,27 +15,13 @@ export default function HomePage() {
     '&:hover': {
       backgroundColor: '#4a4944',
     },
-  // const buttonStyles = {
-  //   marginTop: '30px',
-  //   backgroundColor: 'transparent', // No background
-  //   color: '#6b625a', // Matches earlier text color
-  //   border: '1px solid #6b625a', // Outline only
-  //   borderRadius: '30px',
-  //   padding: '10px 30px',
-  //   textTransform: 'uppercase',
-  //   fontSize: '1rem',
-  //   fontWeight: '600',
-  //   '&:hover': {
-  //     backgroundColor: '#6b625a', // Add background on hover
-  //     color: '#fff', // Text color on hover
-  //   },
   };
 
   const containerStyles = {
-    backgroundColor: '#f9f9f7', // Matches earlier modal background
+    backgroundColor: '#f9f9f7',
     borderRadius: '12px',
     padding: '40px',
-    margin: '30px auto 30px', // Adds spacing below modal
+    margin: '30px auto 30px',
     maxWidth: '2000px',
     width: '95%',
     textAlign: 'center',
@@ -43,58 +29,57 @@ export default function HomePage() {
 
   return (
     <Box
-  sx={{
-    width: '100%',
-    minHeight: '100vh',
-    backgroundColor: '#ffffff',
-    position: 'relative',
-    paddingBottom: '20px', // Adjust this
-  }}
->
-
-<Box
-  component="div"
-  sx={{
-    position: 'relative', // Ensures text positions relative to this container
-    width: '100%',
-    height: '60vh', // Same height as the image
-    overflow: 'hidden',
-  }}
->
-  {/* Background Image */}
-  <Box
-    component="img"
-    src="/homepage/sea.gif" // Replace with the actual path to your image
-    alt="Omicron Chapter"
-    sx={{
-      width: '100%',
-      height: '100%',
-      objectFit: 'cover',
-    }}
-  />
-
-  {/* Centered Title Over Image */}
-  <Box
-    sx={{
-      position: 'absolute',
-      top: '50%', // Vertically center
-      left: '50%', // Horizontally center
-      transform: 'translate(-50%, -50%)', // Adjust for perfect centering
-      textAlign: 'center',
-      color: '#f9f9f7', // Light text color
-    }}
-  >
-    <Typography
       sx={{
-        fontSize: '2rem', // Smaller font size
-        fontWeight: 600,
-        letterSpacing: '0.1em',
+        width: '100%',
+        minHeight: '100vh',
+        backgroundColor: '#ffffff',
+        position: 'relative',
+        paddingBottom: '20px',
       }}
     >
-      Omicron Chapter
-    </Typography>
-  </Box>
-</Box>
+      <Box
+        component="div"
+        sx={{
+          position: 'relative',
+          width: '100%',
+          height: '60vh',
+          overflow: 'hidden',
+        }}
+      >
+        {/* Background Image */}
+        <Box
+          component="img"
+          src="/homepage/sea.gif"
+          alt="Omicron Chapter"
+          sx={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+          }}
+        />
+
+        {/* Centered Title Over Image */}
+        <Box
+          sx={{
+            position: 'absolute',
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+            textAlign: 'center',
+            color: '#f9f9f7',
+          }}
+        >
+          <Typography
+            sx={{
+              fontSize: '2rem',
+              fontWeight: 600,
+              letterSpacing: '0.1em',
+            }}
+          >
+            Omicron Chapter
+          </Typography>
+        </Box>
+      </Box>
 
       {/* Main Content - Chapter Info */}
       <Box sx={containerStyles}>
@@ -118,7 +103,7 @@ export default function HomePage() {
             margin: '0 auto',
           }}
         >
-          Welcome to alpha Kappa Delta Phi's Omicron Chapter at the California Polytechnic State
+          Welcome to alpha Kappa Delta Phi&apos;s Omicron Chapter at the California Polytechnic State
           University, San Luis Obispo. alpha Kappa Delta Phi is the largest and only international
           Asian interest sorority on campus. The sorority was founded at the University of
           California, Berkeley in 1990, and since then, it has grown to become the first and largest
@@ -148,7 +133,7 @@ export default function HomePage() {
             marginBottom: '30px',
           }}
         >
-          RUSH Cal Poly's aKDPhi
+          RUSH Cal Poly&apos;s aKDPhi
         </Typography>
         <Typography
           sx={{
