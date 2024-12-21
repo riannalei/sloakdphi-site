@@ -148,8 +148,24 @@ export default function AwardsPage() {
           <Box sx={{ marginBottom: '40px' }}>
             <Typography sx={sectionTitleStyles}>University Recognition</Typography>
             <Grid container spacing={4}>
-              <Grid item xs={12} sm={6}>
+            <Grid item xs={12} sm={6}>
                 <List>
+                  <ListItem>
+                    <Typography sx={itemTextStyles}>Spring 2023 - USFC&apos;s Philanthropic Excellence</Typography>
+                  </ListItem>
+                  <ListItem>
+                    <Typography sx={itemTextStyles}>Spring 2023 - FSL Standards of Excellence in Safety Risk & Management</Typography>
+                  </ListItem>
+                  <ListItem>
+                    <Typography sx={itemTextStyles}>Spring 2023 - FSL Standards of Excellence: Philanthropy Event of the Year - Breast Cancer Awareness</Typography>
+                  </ListItem>
+                </List>
+              </Grid>
+            <Grid item xs={12} sm={6}>
+                <List>
+                <ListItem>
+                    <Typography sx={itemTextStyles}>Spring 2023 - USFC&apos;s Academic Excellence Award</Typography>
+                  </ListItem>
                   <ListItem>
                     <Typography sx={itemTextStyles}>Spring 2022 - USFC&apos;s Academic Excellence Award</Typography>
                   </ListItem>
@@ -178,6 +194,12 @@ export default function AwardsPage() {
               </Typography>
               <Typography sx={itemTextStyles}>
                 Joanna Vo - FSL Standards of Excellence: New Member of the Year
+              </Typography>
+              <Typography sx={itemTextStyles}>
+                Hannah Le - In Recognition of Inspirational Sisterhood (I.R.I.S award)
+              </Typography>
+              <Typography sx={itemTextStyles}>
+                Megan Morimoto - In Recognition of Inspirational Sisterhood, 2024 (I.R.I.S award)
               </Typography>
             </Box>
           </Box>

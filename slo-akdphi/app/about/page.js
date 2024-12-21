@@ -37,32 +37,27 @@ export default function AboutPage() {
   const pillarDescriptions = {
     sisterhood: {
       title: 'Sisterhood',
-      description:
-        'By joining alpha Kappa Delta Phi, sisters form lifelong relationships. Sisterhood gives us a strong support system for personal, professional, or academic pursuits.',
+      description: 'Joining alpha Kappa Delta Phi means forming lifelong bonds and creating lasting memories. Sisters support each other in personal, academic, and professional pursuits, building strong relationships that go beyond college. Activities like house dates and road trips connect sisters nationwide, fostering growth and unwavering support.',
       image: '/about/about2.jpg',
     },
     leadership: {
       title: 'Leadership',
-      description:
-        'We encourage members to explore leadership by taking officer roles, challenging themselves, and building confidence and communication skills.',
+      description: 'aKDPhi encourages members to grow as leaders through officer roles and responsibilities. Sisters develop skills in organization, communication, and confidence, preparing them for future success.',
       image: '/about/about.jpg',
     },
     scholarship: {
       title: 'Scholarship',
-      description:
-        'We prioritize academics with strong support networks, study hours, and resources. Our sisters excel academically while pursuing their goals.',
+      description: 'Academics are a priority at aKDPhi, with one of the highest GPAs in Cal Poly’s Greek community. Sisters benefit from study hours, shared resources, and a strong support system, alongside opportunities for scholarships and grants.',
       image: '/about/about2.jpg',
     },
     service: {
       title: 'Service',
-      description:
-        'We focus on community service, with a national emphasis on Breast Cancer Awareness and local efforts to aid the Asian American community.',
+      description: 'Our philanthropy focuses on Breast Cancer Awareness through workshops, events, and service projects. We also promote Asian American awareness and support the community through volunteer work and fundraisers.',
       image: '/about/about.jpg',
     },
     awareness: {
       title: 'Asian Awareness',
-      description:
-        'We promote Asian Awareness through events like PolyCultural Weekend, Culture Fest, and more, welcoming members from all backgrounds.',
+      description: 'As an Asian-interest sorority, aKDPhi promotes Asian Awareness while embracing diversity. We celebrate cultures through events like PolyCultural Weekend, Culture Fest, and Lantern Fest, welcoming members from all backgrounds.',
       image: '/about/about2.jpg',
     },
   };
@@ -164,32 +159,81 @@ export default function AboutPage() {
       </Box>
 
       {/* History Section */}
-      <Box sx={containerStyles}>
-        <Typography sx={sectionTitleStyles}>Our History</Typography>
-        <Typography sx={subTextStyles}>
-          alpha Kappa Delta Phi was established at the University of California, Berkeley in 1989,
-          spreading sisterhood, scholarship, leadership, service, and Asian Awareness across
-          prominent universities nationwide. At Cal Poly, Omicron Chapter was founded in 1996 by six
-          women with a vision to create a supportive community for Asian American women.
-        </Typography>
-      </Box>
+<Box sx={containerStyles}>
+  <Typography sx={sectionTitleStyles}>National History</Typography>
+  <Typography sx={{ ...subTextStyles, mb: 2 }}>
+    alpha Kappa Delta Phi was founded at UC Berkeley in 1989 and officially recognized in 1990, 
+    creating a space for Asian American women in the Greek system. With a focus on sisterhood, 
+    scholarship, leadership, service, and Asian awareness, the sorority has grown to campuses 
+    nationwide, empowering women to achieve their goals while fostering lasting bonds.
+  </Typography>
+  <Typography sx={{ ...sectionTitleStyles, mt: 4 }}>Chapter History</Typography>
+  <Typography sx={subTextStyles}>
+    The Omicron Chapter at Cal Poly was established in 1996 by six determined women with a 
+    vision of creating a supportive community for Asian American women. Dedicated to promoting 
+    sisterhood and leadership, our chapter has continued to thrive, embracing new ideas while 
+    honoring the strong foundation laid by our founding sisters.
+  </Typography>
+</Box>
+
 
       {/* Facts About aKDPhi */}
-      <Box sx={containerStyles}>
-        <Typography sx={sectionTitleStyles}>Facts About aKDPhi</Typography>
-        <Box sx={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto' }}>
-          <Typography sx={subTextStyles}><strong>Purpose:</strong> The purpose of alpha Kappa Delta Phi is to promote sisterhood, scholarship, leadership, and Asian Awareness in the University and community.</Typography>
-          <Typography sx={subTextStyles}><strong>Creed:</strong> Love and Friendship</Typography>
-          <Typography sx={subTextStyles}><strong>Motto:</strong> &quot;Timeless Friendship Through Sisterhood&quot;</Typography>
-          <Typography sx={subTextStyles}><strong>Colors:</strong> Purple and White</Typography>
-          <Typography sx={subTextStyles}><strong>Symbol:</strong> Hourglass</Typography>
-          <Typography sx={subTextStyles}><strong>Stone:</strong> Diamond</Typography>
-          <Typography sx={subTextStyles}><strong>Mascot:</strong> Phoenix</Typography>
-          <Typography sx={subTextStyles}><strong>Vision:</strong> A worldwide network of respected, confident women elevating their communities through leadership.</Typography>
-          <Typography sx={subTextStyles}><strong>Flower:</strong> Iris</Typography>
-          <Typography sx={subTextStyles}><strong>Philanthropy:</strong> Breast Cancer Awareness</Typography>
-        </Box>
-      </Box>
+<Box sx={containerStyles}>
+  <Typography sx={sectionTitleStyles}>Facts About aKDPhi</Typography>
+  <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 4 }}>
+    {/* Left Side */}
+    <Box sx={{ flex: '1 1 50%', minWidth: '300px' }}>
+      <Typography sx={{ ...subTextStyles, fontSize: '0.875rem', mb: 2 }}>
+        <strong>Purpose:</strong> The purpose of alpha Kappa Delta Phi is to promote sisterhood, 
+        scholarship, leadership, and Asian Awareness in the University and community, while 
+        encouraging the expression of the individual. The sorority is composed of highly motivated 
+        women with diverse backgrounds, interests, and fields of study. Each woman, however, shares 
+        a strong bond of love, friendship, and sisterhood. With a supportive network of sisters, each 
+        woman can strive to fulfill her personal, academic, and career goals.
+      </Typography>
+      <Typography sx={{ ...subTextStyles, fontSize: '0.875rem', mb: 2 }}>
+        <strong>Mission:</strong> The sisterhood of alpha Kappa Delta Phi creates a sense of belonging 
+        for womxn that nurtures life-long friendships, develops self-empowered leaders, and strengthens 
+        communities through service, scholarship, and Asian awareness.
+      </Typography>
+      <Typography sx={{ ...subTextStyles, fontSize: '0.875rem', mb: 2 }}>
+        <strong>Vision:</strong> alpha Kappa Delta Phi envisions a worldwide network of respected, confident 
+        women who elevate each other and their communities through compassionate, purpose-driven leadership 
+        that ensures diversity, encourages innovation, and promotes collaboration.
+      </Typography>
+    </Box>
+
+    {/* Right Side */}
+    <Box sx={{ flex: '1 1 40%', minWidth: '200px' }}>
+      <Typography sx={{ ...subTextStyles, fontSize: '0.875rem', mb: 1 }}>
+        <strong>Creed:</strong> Love and Friendship
+      </Typography>
+      <Typography sx={{ ...subTextStyles, fontSize: '0.875rem', mb: 1 }}>
+        <strong>Motto:</strong> &quot;Timeless Friendship Through Sisterhood&quot;
+      </Typography>
+      <Typography sx={{ ...subTextStyles, fontSize: '0.875rem', mb: 1 }}>
+        <strong>Colors:</strong> Purple and White
+      </Typography>
+      <Typography sx={{ ...subTextStyles, fontSize: '0.875rem', mb: 1 }}>
+        <strong>Symbol:</strong> Hourglass
+      </Typography>
+      <Typography sx={{ ...subTextStyles, fontSize: '0.875rem', mb: 1 }}>
+        <strong>Stone:</strong> Diamond
+      </Typography>
+      <Typography sx={{ ...subTextStyles, fontSize: '0.875rem', mb: 1 }}>
+        <strong>Mascot:</strong> Phoenix
+      </Typography>
+      <Typography sx={{ ...subTextStyles, fontSize: '0.875rem', mb: 1 }}>
+        <strong>Flower:</strong> Iris
+      </Typography>
+      <Typography sx={{ ...subTextStyles, fontSize: '0.875rem', mb: 1 }}>
+        <strong>Philanthropy:</strong> Breast Cancer Awareness
+      </Typography>
+    </Box>
+  </Box>
+</Box>
+
+
     </Box>
   );
 }

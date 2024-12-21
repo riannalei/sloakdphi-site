@@ -145,8 +145,7 @@ export default function HomePage() {
             margin: '0 auto',
           }}
         >
-          Our Fall 2024 Rush has come to a close! Thank you to everyone who came out and be sure to
-          check back in for new rush information in the Winter!
+          Our Winter 2025 Rush is coming soon! Stay tuned for updates and get ready to learn more about alpha Kappa Delta Phi. We can't wait to meet you!
         </Typography>
         <Button
           variant="contained"

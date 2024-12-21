@@ -90,7 +90,6 @@ export default function ChapterRosterPage() {
               backgroundColor: '#f9f9f7',
               borderRadius: '12px',
               padding: '20px',
-              boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)',
               textAlign: 'center',
             }}
           >
@@ -272,16 +271,24 @@ const rosterData = {
     'Rianna Lei',
     'Megan Morimoto',
     'Danielle Therese Palacpac',
-    'Dani Tranh',
+    'Dani Tran',
   ],
   'ALPHA LAMBDA': [
     'Haley Hoang',
     'Melindajane Pagaoa',
     'Daphne So',
-    'Anh Tranh',
+    'Anh Tran',
   ],
   'ALPHA MU': [
     'Abigail Jaromay',
     'Sara Stone',
+  ],
+  'ALPHA NU': [
+    'Jasmine Buenafe',
+    'Olivia Low',
+    'Aurora-Marie Munoz',
+    'Rinah Ng',
+    'Kelly Sung',
+    'Jacie Tram',
   ],
 };
