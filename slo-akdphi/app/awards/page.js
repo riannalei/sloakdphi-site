@@ -150,6 +150,12 @@ export default function AwardsPage() {
             <Grid container spacing={4}>
             <Grid item xs={12} sm={6}>
                 <List>
+                <ListItem>
+                    <Typography sx={itemTextStyles}>Spring 2024 - USFC&apos;s Philanthropic Excellence</Typography>
+                  </ListItem>
+                <ListItem>
+                    <Typography sx={itemTextStyles}>Spring 2024 - FSL Standards of Excellence in DE&apos;I</Typography>
+                  </ListItem>
                   <ListItem>
                     <Typography sx={itemTextStyles}>Spring 2023 - USFC&apos;s Philanthropic Excellence</Typography>
                   </ListItem>
@@ -200,6 +206,9 @@ export default function AwardsPage() {
               </Typography>
               <Typography sx={itemTextStyles}>
                 Megan Morimoto - In Recognition of Inspirational Sisterhood, 2024 (I.R.I.S award)
+              </Typography>
+              <Typography sx={itemTextStyles}>
+              Joanna Vo - Sorority Member of the Year
               </Typography>
             </Box>
           </Box>
