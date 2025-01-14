@@ -48,15 +48,20 @@ export default function HomePage() {
       >
         {/* Background Image */}
         <Box
-          component="img"
-          src="/homepage/sea.gif"
-          alt="Omicron Chapter"
-          sx={{
-            width: '100%',
-            height: '100%',
-            objectFit: 'cover',
-          }}
-        />
+  component="video"
+  src="/homepage/homepage.mov"
+  autoPlay
+  loop
+  muted
+  playsInline
+  alt="Omicron Chapter"
+  sx={{
+    width: '100%',
+    height: '100%',
+    objectFit: 'cover',
+  }}
+/>
+
 
         {/* Centered Title Over Image */}
         <Box

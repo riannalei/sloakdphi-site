@@ -79,7 +79,7 @@ export default function RecruitmentPage() {
       {/* Page Title */}
       <Typography sx={sectionTitleStyles}>RUSH aKDPhi</Typography>
       <Typography sx={subTextStyles}>
-        Winter 2025 rush happening now!!
+        Winter 2025 rush kickin' off!
       </Typography>
 
       {/* WHY aKDPhi Section */}
@@ -100,7 +100,7 @@ export default function RecruitmentPage() {
       <Box sx={containerStyles}>
         <Box sx={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
           <Image
-            src="/recruitment/rush1.jpeg"
+            src="/recruitment/1.PNG"
             alt="Picture 1"
             layout="intrinsic"
             width={500}
@@ -108,7 +108,7 @@ export default function RecruitmentPage() {
             style={{ borderRadius: '12px', objectFit: 'cover' }}
           />
           <Image
-            src="/recruitment/rush1.jpeg"
+            src="/recruitment/2.PNG"
             alt="Picture 2"
             layout="intrinsic"
             width={500}
