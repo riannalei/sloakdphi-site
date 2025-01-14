@@ -79,7 +79,7 @@ export default function RecruitmentPage() {
       {/* Page Title */}
       <Typography sx={sectionTitleStyles}>RUSH aKDPhi</Typography>
       <Typography sx={subTextStyles}>
-        Winter 2025 rush coming soon...
+        Winter 2025 rush happening now!!
       </Typography>
 
       {/* WHY aKDPhi Section */}

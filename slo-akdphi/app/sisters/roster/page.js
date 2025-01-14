@@ -287,7 +287,6 @@ const rosterData = {
     'Jasmine Buenafe',
     'Olivia Low',
     'Aurora-Marie Munoz',
-    'Rinah Ng',
     'Kelly Sung',
     'Jacie Tram',
   ],

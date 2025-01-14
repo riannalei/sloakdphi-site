@@ -115,13 +115,6 @@ const classes = [
         photo: '/sisters/sister.jpg',
       },
       {
-        id: '#174',
-        nickname: 'Rinuts',
-        name: 'Rinah',
-        lastName: 'Ng',
-        photo: '/sisters/sister.jpg',
-      },
-      {
         id: '#175',
         nickname: 'K.A.L.O.',
         name: 'Kelly',
