@@ -38,27 +38,27 @@ export default function AboutPage() {
     sisterhood: {
       title: 'Sisterhood',
       description: 'Joining alpha Kappa Delta Phi means forming lifelong bonds and creating lasting memories. Sisters support each other in personal, academic, and professional pursuits, building strong relationships that go beyond college. Activities like house dates and road trips connect sisters nationwide, fostering growth and unwavering support.',
-      image: '/about/about2.jpg',
+      image: '/about/1.jpg',
     },
     leadership: {
       title: 'Leadership',
       description: 'aKDPhi encourages members to grow as leaders through officer roles and responsibilities. Sisters develop skills in organization, communication, and confidence, preparing them for future success.',
-      image: '/about/about.jpg',
+      image: '/about/2.jpg',
     },
     scholarship: {
       title: 'Scholarship',
       description: 'Academics are a priority at aKDPhi, with one of the highest GPAs in Cal Poly’s Greek community. Sisters benefit from study hours, shared resources, and a strong support system, alongside opportunities for scholarships and grants.',
-      image: '/about/about2.jpg',
+      image: '/about/3.jpg',
     },
     service: {
       title: 'Service',
       description: 'Our philanthropy focuses on Breast Cancer Awareness through workshops, events, and service projects. We also promote Asian American awareness and support the community through volunteer work and fundraisers.',
-      image: '/about/about.jpg',
+      image: '/about/4.jpg',
     },
     awareness: {
       title: 'Asian Awareness',
       description: 'As an Asian-interest sorority, aKDPhi promotes Asian Awareness while embracing diversity. We celebrate cultures through events like PolyCultural Weekend, Culture Fest, and Lantern Fest, welcoming members from all backgrounds.',
-      image: '/about/about2.jpg',
+      image: '/about/5.jpg',
     },
   };
 
