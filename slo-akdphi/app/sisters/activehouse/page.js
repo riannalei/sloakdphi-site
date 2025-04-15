@@ -227,7 +227,7 @@ const classes = [
         nickname: 'G.L.O.W.',
         name: 'Rianna',
         lastName: 'Lei',
-        photo: '/sisters/rianna.jpg',
+        photo: '/sisters/rianna.png',
       },
       {
         id: '#162',
