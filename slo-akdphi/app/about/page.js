@@ -68,8 +68,8 @@ export default function AboutPage() {
       <Box sx={containerStyles}>
         <Typography sx={sectionTitleStyles}>A Note From Our President</Typography>
         <Typography sx={subTextStyles}>
-          Hello! My name is Joanna Vo, and I am excited to serve as Omicron Chapter&apos;s President for
-          the 2024 year. I am eternally grateful for everything aKDPhi has given me and am honored
+          Hello! My name is Megan Morimoto, and I am excited to serve as Omicron Chapter&apos;s President for
+          the 2025-2026 year. I am eternally grateful for everything aKDPhi has given me and am honored
           to give back to the community that nurtured me.
         </Typography>
         <Typography sx={subTextStyles}>
@@ -77,7 +77,7 @@ export default function AboutPage() {
           So many memories are waiting to be made!
         </Typography>
         <Typography sx={{ ...subTextStyles, padding: '20px', textAlign: 'center', fontStyle: 'italic' }}>
-          Love and Friendship,<br />Joanna Vo
+          Love and Friendship,<br />Megan Morimoto
         </Typography>
       </Box>
 

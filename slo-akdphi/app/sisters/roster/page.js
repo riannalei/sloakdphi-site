@@ -284,10 +284,15 @@ const rosterData = {
     'Sara Stone',
   ],
   'ALPHA NU': [
-    'Jasmine Buenafe',
     'Olivia Low',
     'Aurora-Marie Munoz',
     'Kelly Sung',
     'Jacie Tram',
+  ],
+  'ALPHA XI': [
+    'Cheyenne Deocares',
+    'Lindsay Lee',
+    'Hannah Mored',
+    'Carys Nguyen',
   ],
 };

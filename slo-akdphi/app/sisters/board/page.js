@@ -100,7 +100,7 @@ const BoardPage = () => {
         <Box sx={styles.container}>
           <Typography sx={styles.purpleTitle}>Executive Board</Typography>
           <Typography sx={styles.positionText}>PRESIDENT</Typography>
-          <Typography sx={styles.nameText}>Kathryn Hsiang</Typography>
+          <Typography sx={styles.nameText}>Megan Morimoto</Typography>
           <Typography sx={styles.positionText}>VP OF INTERNAL AFFAIRS</Typography>
           <Typography sx={styles.nameText}>Daphne So</Typography>
           <Typography sx={styles.positionText}>VP OF EXTERNAL AFFAIRS</Typography>
@@ -119,21 +119,21 @@ const BoardPage = () => {
         <Box sx={styles.container}>
           <Typography sx={styles.purpleTitle}>Cabinet</Typography>
           <Typography sx={styles.positionText}>RECRUITMENT</Typography>
-          <Typography sx={styles.nameText}>Danielle Palacpac, Daphne So (Winter 2025)</Typography>
+          <Typography sx={styles.nameText}>Rianna Lei, Kelly Sung (Fall 2025)</Typography>
           <Typography sx={styles.positionText}>OPEN HOUSE</Typography>
           <Typography sx={styles.nameText}>Sara Stone</Typography>
           <Typography sx={styles.positionText}>DIVERSITY, EQUITY, AND INCLUSION</Typography>
-          <Typography sx={styles.nameText}>Danielle Palacpac</Typography>
+          <Typography sx={styles.nameText}>Lindsay Lee</Typography>
           <Typography sx={styles.positionText}>CULTURAL</Typography>
-          <Typography sx={styles.nameText}>MJ Pagaoa, Kelly Sung</Typography>
+          <Typography sx={styles.nameText}>MJ Pagaoa, Kelly Sung, Cheyenne Deocares</Typography>
           <Typography sx={styles.positionText}>CONTRIBUTION</Typography>
-          <Typography sx={styles.nameText}>Megan Morimoto</Typography>
+          <Typography sx={styles.nameText}>Haley Hoang</Typography>
           <Typography sx={styles.positionText}>ACADEMICS</Typography>
-          <Typography sx={styles.nameText}>Anh Tran</Typography>
+          <Typography sx={styles.nameText}>Hannah Mored</Typography>
           <Typography sx={styles.positionText}>FUNDRAISER</Typography>
-          <Typography sx={styles.nameText}>Joanna Vo, Jacie Tram</Typography>
+          <Typography sx={styles.nameText}>Aurora-Marie Muñoz, Jacie Tram</Typography>
           <Typography sx={styles.positionText}>SISTERHOOD</Typography>
-          <Typography sx={styles.nameText}>Jasmine Buenafe</Typography>
+          <Typography sx={styles.nameText}>Carys Nguyen</Typography>
           <Typography sx={styles.positionText}>STROLL MASTERS</Typography>
           <Typography sx={styles.nameText}>MJ Pagaoa, Aurora-Marie Muñoz</Typography>
           <Typography sx={styles.positionText}>ALUMNI RELATIONS</Typography>
@@ -145,7 +145,7 @@ const BoardPage = () => {
           <Typography sx={styles.positionText}>WEB DEVELOPER</Typography>
           <Typography sx={styles.nameText}>Rianna Lei</Typography>
           <Typography sx={styles.positionText}>VIOLENCE PREVENTION</Typography>
-          <Typography sx={styles.nameText}>Maya Peterson</Typography>
+          <Typography sx={styles.nameText}>Alice Hanscom</Typography>
         </Box>
       </Box>
     </Box>

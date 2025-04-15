@@ -79,7 +79,7 @@ export default function RecruitmentPage() {
       {/* Page Title */}
       <Typography sx={sectionTitleStyles}>RUSH aKDPhi</Typography>
       <Typography sx={subTextStyles}>
-        Winter 2025 rush kickin&apos; off!
+        Fall 2025 rush coming soon...
       </Typography>
 
       {/* WHY aKDPhi Section */}
@@ -139,7 +139,7 @@ export default function RecruitmentPage() {
       <Box sx={containerStyles}>
         <Typography sx={sectionTitleStyles}>Past Rush Events</Typography>
         <Slider {...sliderSettings}>
-          {['fall22.PNG', 'fall23.png', 'winter23.png', 'winter24.jpeg'].map((fileName, index) => (
+          {['fall22.PNG', 'fall23.png', 'winter23.png', 'winter24.jpeg', '1.PNG'].map((fileName, index) => (
             <Box
               key={index}
               sx={{
