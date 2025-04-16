@@ -4,8 +4,18 @@ import React, { useState } from 'react';
 import { Box, Typography, Grid, Divider } from '@mui/material';
 
 export default function AboutPage() {
+  const containerStyles = {
+    backgroundColor: '#f9f9f7',
+    borderRadius: '12px',
+    padding: { xs: '20px', sm: '40px' },
+    margin: { xs: '20px auto', sm: '40px auto' },
+    maxWidth: '2000px',
+    width: '95%',
+    textAlign: 'center',
+  };
+
   const sectionTitleStyles = {
-    fontSize: '2rem',
+    fontSize: { xs: '1.5rem', sm: '2rem' },
     fontWeight: 700,
     color: '#6b625a',
     letterSpacing: '0.1em',
@@ -14,22 +24,12 @@ export default function AboutPage() {
   };
 
   const subTextStyles = {
-    fontSize: '1.2rem',
+    fontSize: { xs: '1rem', sm: '1.2rem' },
     color: '#6b625a',
     lineHeight: '1.6',
     textAlign: 'center',
     maxWidth: '800px',
     margin: '0 auto',
-  };
-
-  const containerStyles = {
-    backgroundColor: '#f9f9f7',
-    borderRadius: '12px',
-    padding: '40px',
-    margin: '40px auto',
-    maxWidth: '2000px',
-    width: '95%',
-    textAlign: 'center',
   };
 
   const [activePillar, setActivePillar] = useState('sisterhood');
@@ -47,7 +47,7 @@ export default function AboutPage() {
     },
     scholarship: {
       title: 'Scholarship',
-      description: 'Academics are a priority at aKDPhi, with one of the highest GPAs in Cal Poly’s Greek community. Sisters benefit from study hours, shared resources, and a strong support system, alongside opportunities for scholarships and grants.',
+      description: 'Academics are a priority at aKDPhi, with one of the highest GPAs in Cal Poly\'s Greek community. Sisters benefit from study hours, shared resources, and a strong support system, alongside opportunities for scholarships and grants.',
       image: '/about/3.jpg',
     },
     service: {
@@ -89,7 +89,7 @@ export default function AboutPage() {
             <Box
               sx={{
                 width: '100%',
-                height: '500px',
+                height: { xs: '300px', sm: '500px' },
                 borderRadius: '12px',
                 overflow: 'hidden',
               }}

@@ -7,11 +7,12 @@ export default function HomePage() {
   const buttonStyles = {
     backgroundColor: '#6b625a',
     color: '#fff',
-    padding: '10px 20px',
+    padding: { xs: '8px 16px', sm: '10px 20px' },
     borderRadius: '24px',
-    marginTop: '30px',
+    marginTop: { xs: '20px', sm: '30px' },
     fontWeight: 600,
-    marginRight: '10px',
+    marginRight: { xs: '5px', sm: '10px' },
+    fontSize: { xs: '0.9rem', sm: '1rem' },
     '&:hover': {
       backgroundColor: '#4a4944',
     },
@@ -20,8 +21,8 @@ export default function HomePage() {
   const containerStyles = {
     backgroundColor: '#f9f9f7',
     borderRadius: '12px',
-    padding: '40px',
-    margin: '30px auto 30px',
+    padding: { xs: '20px', sm: '40px' },
+    margin: { xs: '20px auto', sm: '30px auto' },
     maxWidth: '2000px',
     width: '95%',
     textAlign: 'center',
@@ -42,26 +43,25 @@ export default function HomePage() {
         sx={{
           position: 'relative',
           width: '100%',
-          height: '60vh',
+          height: { xs: '40vh', sm: '60vh' },
           overflow: 'hidden',
         }}
       >
         {/* Background Image */}
         <Box
-  component="video"
-  src="/homepage/homepage.mov"
-  autoPlay
-  loop
-  muted
-  playsInline
-  alt="Omicron Chapter"
-  sx={{
-    width: '100%',
-    height: '100%',
-    objectFit: 'cover',
-  }}
-/>
-
+          component="video"
+          src="/homepage/homepage.mov"
+          autoPlay
+          loop
+          muted
+          playsInline
+          alt="Omicron Chapter"
+          sx={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+          }}
+        />
 
         {/* Centered Title Over Image */}
         <Box
@@ -72,13 +72,15 @@ export default function HomePage() {
             transform: 'translate(-50%, -50%)',
             textAlign: 'center',
             color: '#f9f9f7',
+            width: '90%',
           }}
         >
           <Typography
             sx={{
-              fontSize: '2rem',
+              fontSize: { xs: '1.5rem', sm: '2rem' },
               fontWeight: 600,
               letterSpacing: '0.1em',
+              textShadow: '2px 2px 4px rgba(0,0,0,0.5)',
             }}
           >
             Omicron Chapter
@@ -90,20 +92,20 @@ export default function HomePage() {
       <Box sx={containerStyles}>
         <Typography
           sx={{
-            fontSize: '2rem',
+            fontSize: { xs: '1.5rem', sm: '2rem' },
             fontWeight: 700,
             color: '#6b625a',
-            marginBottom: '30px',
+            marginBottom: { xs: '20px', sm: '30px' },
           }}
         >
           California Polytechnic State University, San Luis Obispo
         </Typography>
         <Typography
           sx={{
-            fontSize: '1.2rem',
+            fontSize: { xs: '1rem', sm: '1.2rem' },
             color: '#6b625a',
             lineHeight: '1.8',
-            marginBottom: '30px',
+            marginBottom: { xs: '20px', sm: '30px' },
             maxWidth: '800px',
             margin: '0 auto',
           }}
@@ -122,30 +124,30 @@ export default function HomePage() {
       <Box sx={containerStyles}>
         <Typography
           sx={{
-            fontSize: '2rem',
+            fontSize: { xs: '1.5rem', sm: '2rem' },
             fontWeight: 700,
             color: '#6b625a',
-            marginBottom: '30px',
+            marginBottom: { xs: '20px', sm: '30px' },
           }}
         >
           Interested?
         </Typography>
         <Typography
           sx={{
-            fontSize: '1.2rem',
+            fontSize: { xs: '1rem', sm: '1.2rem' },
             color: '#6b625a',
             lineHeight: '1.8',
-            marginBottom: '30px',
+            marginBottom: { xs: '20px', sm: '30px' },
           }}
         >
           RUSH Cal Poly&apos;s aKDPhi
         </Typography>
         <Typography
           sx={{
-            fontSize: '1rem',
+            fontSize: { xs: '0.9rem', sm: '1rem' },
             color: '#6b625a',
             lineHeight: '1.8',
-            marginBottom: '30px',
+            marginBottom: { xs: '20px', sm: '30px' },
             maxWidth: '800px',
             margin: '0 auto',
           }}

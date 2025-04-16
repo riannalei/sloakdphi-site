@@ -249,8 +249,8 @@ const classes = [
 
 const responsive = {
   desktop: { breakpoint: { max: 3000, min: 1024 }, items: 3.8 },
-  tablet: { breakpoint: { max: 1024, min: 464 }, items: 2 },
-  mobile: { breakpoint: { max: 464, min: 0 }, items: 1 },
+  tablet: { breakpoint: { max: 1024, min: 464 }, items: 2.2 },
+  mobile: { breakpoint: { max: 464, min: 0 }, items: 1.2 },
 };
 
 export default function ActiveHousePage() {
@@ -268,28 +268,29 @@ export default function ActiveHousePage() {
   return (
     <Box
       sx={{
-        padding: '1rem',
+        padding: { xs: '0.5rem', sm: '1rem' },
         backgroundColor: '#f9f9f7',
         maxWidth: '1200px',
         margin: '0 auto',
+        minHeight: '100vh',
       }}
     >
       {/* Back to Sisters Button */}
       <Box
         onClick={() => router.push('/sisters')}
         sx={{
-          position: 'fixed', // Ensures it's always visible at the top-left
-          top: '130px',
-          left: '60px',
+          position: 'fixed',
+          top: { xs: '100px', sm: '130px' },
+          left: { xs: '20px', sm: '60px' },
           zIndex: 1000,
-          width: '40px',
-          height: '40px',
+          width: { xs: '30px', sm: '40px' },
+          height: { xs: '30px', sm: '40px' },
           backgroundColor: '#dccff9',
           borderRadius: '50%',
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          fontSize: '18px',
+          fontSize: { xs: '14px', sm: '18px' },
           fontWeight: 'bold',
           color: '#6b625a',
           cursor: 'pointer',
@@ -302,27 +303,35 @@ export default function ActiveHousePage() {
       </Box>
 
       {/* Page Header */}
-      <Box sx={{ textAlign: 'center', marginBottom: '3rem' }}>
+      <Box sx={{ textAlign: 'center', marginBottom: { xs: '2rem', sm: '3rem' } }}>
         <Typography
           variant="h4"
-          sx={sectionTitleStyles}
+          sx={{
+            ...sectionTitleStyles,
+            fontSize: { xs: '1.5rem', sm: '2rem' },
+          }}
         >
           Active House
         </Typography>
-        <Typography sx={subTextStyles}>
+        <Typography sx={{
+          ...subTextStyles,
+          fontSize: { xs: '1rem', sm: '1.2rem' },
+        }}>
           Winter 2025
         </Typography>
       </Box>
 
       {/* Classes */}
       {classes.map((classGroup, index) => (
-        <Box key={index} sx={{ marginBottom: '3rem' }}>
+        <Box key={index} sx={{ marginBottom: { xs: '2rem', sm: '3rem' } }}>
           <Typography
             variant="h5"
             sx={{
               ...sectionTitleStyles,
-              textAlign: 'left', // Align to left for titles
+              textAlign: 'left',
               marginBottom: '10px',
+              fontSize: { xs: '1.2rem', sm: '1.5rem' },
+              paddingLeft: { xs: '10px', sm: '0' },
             }}
           >
             {classGroup.title}
@@ -330,7 +339,7 @@ export default function ActiveHousePage() {
               style={{
                 color: '#dccff9',
                 fontStyle: 'italic',
-                fontSize: '1.5rem',
+                fontSize: { xs: '1.1rem', sm: '1.5rem' },
                 marginLeft: '10px',
               }}
             >
@@ -339,20 +348,21 @@ export default function ActiveHousePage() {
           </Typography>
 
           {/* Carousel */}
-          <Box sx={{ position: 'relative', padding: '0 10px' }}>
+          <Box sx={{ position: 'relative', padding: { xs: '0 5px', sm: '0 10px' } }}>
             <Carousel
               responsive={responsive}
               infinite
               showDots={false}
               customLeftArrow={<CustomLeftArrow />}
               customRightArrow={<CustomRightArrow />}
+              itemClass="carousel-item-padding-40-px"
             >
               {classGroup.sisters.map((sister, sisterIndex) => (
                 <Box
                   key={sisterIndex}
                   sx={{
                     textAlign: 'center',
-                    padding: '0 10px',
+                    padding: { xs: '0 5px', sm: '0 10px' },
                     margin: '0 auto',
                   }}
                 >
@@ -361,8 +371,8 @@ export default function ActiveHousePage() {
                     src={sister.photo}
                     alt={sister.name}
                     sx={{
-                      width: '240px',
-                      height: '240px',
+                      width: { xs: '200px', sm: '240px' },
+                      height: { xs: '200px', sm: '240px' },
                       objectFit: 'cover',
                       borderRadius: '8px',
                       margin: '0 auto',
@@ -373,6 +383,7 @@ export default function ActiveHousePage() {
                       fontWeight: 700,
                       color: '#6b625a',
                       marginTop: '0.3rem',
+                      fontSize: { xs: '0.9rem', sm: '1rem' },
                     }}
                   >
                     {sister.id}
@@ -381,7 +392,7 @@ export default function ActiveHousePage() {
                     sx={{
                       fontWeight: 600,
                       color: '#dccff9',
-                      fontSize: '1rem',
+                      fontSize: { xs: '0.9rem', sm: '1rem' },
                       marginBottom: '0.2rem',
                     }}
                   >
@@ -391,12 +402,15 @@ export default function ActiveHousePage() {
                     sx={{
                       fontWeight: 600,
                       color: '#6b625a',
-                      fontSize: '1rem',
+                      fontSize: { xs: '0.9rem', sm: '1rem' },
                     }}
                   >
                     {sister.name}
                   </Typography>
-                  <Typography sx={{ color: '#555', fontSize: '1rem' }}>
+                  <Typography sx={{ 
+                    color: '#555', 
+                    fontSize: { xs: '0.9rem', sm: '1rem' } 
+                  }}>
                     {sister.lastName}
                   </Typography>
                 </Box>
