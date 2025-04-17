@@ -134,7 +134,7 @@ const BoardPage = () => {
           <Typography sx={styles.nameText}>Aurora-Marie Muñoz, Jacie Tram</Typography>
           <Typography sx={styles.positionText}>SISTERHOOD</Typography>
           <Typography sx={styles.nameText}>Carys Nguyen</Typography>
-          <Typography sx={styles.positionText}>STROLL MASTERS</Typography>
+          <Typography sx={styles.positionText}>DANCE COORDINATORS</Typography>
           <Typography sx={styles.nameText}>MJ Pagaoa, Aurora-Marie Muñoz</Typography>
           <Typography sx={styles.positionText}>ALUMNI RELATIONS</Typography>
           <Typography sx={styles.nameText}>Olivia Low</Typography>
