@@ -106,7 +106,7 @@ const BoardPage = () => {
           <Typography sx={styles.positionText}>VP OF EXTERNAL AFFAIRS</Typography>
           <Typography sx={styles.nameText}>Dani Tran</Typography>
           <Typography sx={styles.positionText}>VP OF SERVICE</Typography>
-          <Typography sx={styles.nameText}>Abby Jaromay</Typography>
+          <Typography sx={styles.nameText}>OPEN</Typography>
           <Typography sx={styles.positionText}>VP OF NEW MEMBER EDUCATION</Typography>
           <Typography sx={styles.nameText}>Megan Morimoto (Winter 2025)</Typography>
           <Typography sx={styles.positionText}>VP OF TREASURY</Typography>
@@ -140,8 +140,6 @@ const BoardPage = () => {
           <Typography sx={styles.nameText}>Olivia Low</Typography>
           <Typography sx={styles.positionText}>MEDIA RELATIONS</Typography>
           <Typography sx={styles.nameText}>Daphne So</Typography>
-          <Typography sx={styles.positionText}>GRAPHICS</Typography>
-          <Typography sx={styles.nameText}>Abby Jaromay</Typography>
           <Typography sx={styles.positionText}>WEB DEVELOPER</Typography>
           <Typography sx={styles.nameText}>Rianna Lei</Typography>
           <Typography sx={styles.positionText}>VIOLENCE PREVENTION</Typography>

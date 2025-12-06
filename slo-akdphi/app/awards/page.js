@@ -154,6 +154,21 @@ export default function AwardsPage() {
             <Grid item xs={12} sm={6}>
                 <List>
                 <ListItem>
+                    <Typography sx={itemTextStyles}>Spring 2025 - Scholarship and Learning</Typography>
+                  </ListItem>
+                  <ListItem>
+                    <Typography sx={itemTextStyles}>Spring 2025 - Leadership and Values</Typography>
+                  </ListItem>
+                  <ListItem>
+                    <Typography sx={itemTextStyles}>Spring 2025 - Community Service and Philanthropy</Typography>
+                  </ListItem>
+                  <ListItem>
+                    <Typography sx={itemTextStyles}>Spring 2025 - Safety and Risk Management</Typography>
+                  </ListItem>
+                  <ListItem>
+                    <Typography sx={itemTextStyles}>Spring 2025 - Diversity and Inclusion</Typography>
+                  </ListItem>
+                <ListItem>
                     <Typography sx={itemTextStyles}>Spring 2024 - USFC&apos;s Philanthropic Excellence</Typography>
                   </ListItem>
                 <ListItem>
@@ -212,6 +227,9 @@ export default function AwardsPage() {
               </Typography>
               <Typography sx={itemTextStyles}>
               Joanna Vo - FSL Standards of Excellence: Sorority Member of the Year
+              </Typography>
+              <Typography sx={itemTextStyles}>
+                Daphne So - In Recognition of Inspirational Sisterhood, 2025 (I.R.I.S award)
               </Typography>
             </Box>
           </Box>

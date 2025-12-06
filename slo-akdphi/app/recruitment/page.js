@@ -79,7 +79,7 @@ export default function RecruitmentPage() {
       {/* Page Title */}
       <Typography sx={sectionTitleStyles}>RUSH aKDPhi</Typography>
       <Typography sx={subTextStyles}>
-        Fall 2025 rush coming soon...
+        Winter 26 rush coming soon...
       </Typography>
 
       {/* WHY aKDPhi Section */}
@@ -118,7 +118,7 @@ export default function RecruitmentPage() {
         </Box>
       </Box>
 
-      {/* Interested Section */}
+      {/* Interested Section
       <Box sx={containerStyles}>
         <Typography sx={sectionTitleStyles}>Interested?</Typography>
         <Typography sx={subTextStyles}>
@@ -134,6 +134,7 @@ export default function RecruitmentPage() {
           </Button>
         </Box>
       </Box>
+      */}
 
       {/* Past Rush Events Slider */}
       <Box sx={containerStyles}>

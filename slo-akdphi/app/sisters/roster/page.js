@@ -280,7 +280,6 @@ const rosterData = {
     'Anh Tran',
   ],
   'ALPHA MU': [
-    'Abigail Jaromay',
     'Sara Stone',
   ],
   'ALPHA NU': [

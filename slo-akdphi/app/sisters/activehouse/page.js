@@ -162,13 +162,6 @@ const classes = [
     subtitle: 'alpha mu',
     sisters: [
       {
-        id: '#169',
-        nickname: 'S.W.A.N.',
-        name: 'Abigail',
-        lastName: 'Jaromay',
-        photo: '/sisters/abby.jpg',
-      },
-      {
         id: '#170',
         nickname: 'P.U.R.R.',
         name: 'Sara',
