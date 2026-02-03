@@ -294,4 +294,10 @@ const rosterData = {
     'Hannah Mored',
     'Carys Nguyen',
   ],
+  'ALPHA OMICRON': [
+    'Layla Fahmi',
+    'Araya Leuth',
+    'Bria Shimada',
+    'Ritika Sridhar',
+  ],
 };

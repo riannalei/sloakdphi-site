@@ -90,6 +90,40 @@ const subTextStyles = {
 //test
 const classes = [
   {
+    title: "Fall '25",
+    subtitle: 'alpha omicron',
+    sisters: [
+      {
+        id: '#181',
+        nickname: 'Lala',
+        name: 'Layla',
+        lastName: 'Fahmi',
+        photo: '/sisters/Layla.JPG',
+      },
+      {
+        id: '#182',
+        nickname: 'Sunkist',
+        name: 'Araya',
+        lastName: 'Leuth',
+        photo: '/sisters/Araya.JPG',
+      },
+      {
+        id: '#183',
+        nickname: 'Kiki',
+        name: 'Bria',
+        lastName: 'Shimada',
+        photo: '/sisters/Bria.JPG',
+      },
+      {
+        id: '#184',
+        nickname: 'driftQueen',
+        name: 'Ritika',
+        lastName: 'Sridhar',
+        photo: '/sisters/ritika.jpg',
+      },
+    ],
+  },
+  {
     title: "Winter '25",
     subtitle: 'alpha xi',
     sisters: [
@@ -98,21 +132,21 @@ const classes = [
         nickname: 'Rasp Ber Ry',
         name: 'Cheyenne',
         lastName: 'Deocares',
-        photo: '/sisters/cheyenne.png',
+        photo: '/sisters/cheyenne.JPG',
       },
       {
         id: '#178',
         nickname: 'S.A.G.E.',
         name: 'Lindsay',
         lastName: 'Lee',
-        photo: '/sisters/lindsay.png',
+        photo: '/sisters/Lindsay.JPG',
       },
       {
         id: '#179',
         nickname: 'Comet',
         name: 'Hannah',
         lastName: 'Mored',
-        photo: '/sisters/hannah.png',
+        photo: '/sisters/hannah.JPG',
       },
       {
         id: '#180',
@@ -139,21 +173,21 @@ const classes = [
         nickname: 'mar~ma~lade',
         name: 'Aurora-Marie',
         lastName: 'Munoz',
-        photo: '/sisters/aurora.jpg',
+        photo: '/sisters/Aurora.jpg',
       },
       {
         id: '#175',
         nickname: 'K.A.L.O.',
         name: 'Kelly',
         lastName: 'Sung',
-        photo: '/sisters/kelly.jpg',
+        photo: '/sisters/Kelly.JPG',
       },
       {
         id: '#176',
         nickname: 'Totoro',
         name: 'Jacie',
         lastName: 'Tram',
-        photo: '/sisters/jacie.jpg',
+        photo: '/sisters/jacie.JPG',
       },
     ],
   },
@@ -179,7 +213,7 @@ const classes = [
         nickname: 'Andromeda',
         name: 'Haley',
         lastName: 'Hoang',
-        photo: '/sisters/haley.jpg',
+        photo: '/sisters/Haley.jpg',
       },
       {
         id: '#166',
@@ -193,7 +227,7 @@ const classes = [
         nickname: 'tigress',
         name: 'Daphne',
         lastName: 'So',
-        photo: '/sisters/daphne.jpg',
+        photo: '/sisters/daphne.JPG',
       },
       {
         id: '#168',
@@ -201,40 +235,6 @@ const classes = [
         name: 'Anh',
         lastName: 'Tran',
         photo: '/sisters/anh.jpg',
-      },
-    ],
-  },
-  {
-    title: "Fall '22",
-    subtitle: 'alpha kappa',
-    sisters: [
-      {
-        id: '#160',
-        nickname: 'kUroMI',
-        name: 'Alice',
-        lastName: 'Hanscom',
-        photo: '/sisters/sister.jpg',
-      },
-      {
-        id: '#161',
-        nickname: 'G.L.O.W.',
-        name: 'Rianna',
-        lastName: 'Lei',
-        photo: '/sisters/rianna.png',
-      },
-      {
-        id: '#162',
-        nickname: 'NutMeg',
-        name: 'Megan',
-        lastName: 'Morimoto',
-        photo: '/sisters/megan.jpg',
-      },
-      {
-        id: '#164',
-        nickname: 'dan i mals',
-        name: 'Dani',
-        lastName: 'Tran',
-        photo: '/sisters/dani.jpg',
       },
     ],
   },
@@ -310,7 +310,7 @@ export default function ActiveHousePage() {
           ...subTextStyles,
           fontSize: { xs: '1rem', sm: '1.2rem' },
         }}>
-          Winter 2025
+          Winter 2026
         </Typography>
       </Box>
 
