@@ -90,6 +90,26 @@ const subTextStyles = {
 //test
 const classes = [
   {
+    title: "Winter '26",
+    subtitle: 'alpha pi',
+    sisters: [
+      {
+        id: '#185',
+        nickname: 'G.O.A.T.',
+        name: 'Lexy',
+        lastName: 'Lim',
+        photo: '/sisters/lexy.jpg',
+      },
+      {
+        id: '#186',
+        nickname: 'Cher Ry Bomb',
+        name: 'Shreeya',
+        lastName: 'Saravanan',
+        photo: '/sisters/shreeya.jpg',
+      },
+    ],
+  },
+  {
     title: "Fall '25",
     subtitle: 'alpha omicron',
     sisters: [
@@ -166,14 +186,14 @@ const classes = [
         nickname: 'mar~ma~lade',
         name: 'Aurora-Marie',
         lastName: 'Munoz',
-        photo: '/sisters/Aurora.jpg',
+        photo: '/sisters/aurora.jpeg',
       },
       {
         id: '#175',
         nickname: 'K.A.L.O.',
         name: 'Kelly',
         lastName: 'Sung',
-        photo: '/sisters/Kelly.JPG',
+        photo: '/sisters/kelly.jpg',
       },
     ],
   },
@@ -186,7 +206,7 @@ const classes = [
         nickname: 'Andromeda',
         name: 'Haley',
         lastName: 'Hoang',
-        photo: '/sisters/Haley.jpg',
+        photo: '/sisters/haley.jpg',
       },
       {
         id: '#166',
@@ -200,7 +220,7 @@ const classes = [
         nickname: 'tigress',
         name: 'Daphne',
         lastName: 'So',
-        photo: '/sisters/daphne.JPG',
+        photo: '/sisters/daphne.jpg',
       },
 
     ],
