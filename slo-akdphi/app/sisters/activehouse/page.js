@@ -202,6 +202,7 @@ const classes = [
         lastName: 'So',
         photo: '/sisters/daphne.JPG',
       },
+
     ],
   },
 ];
