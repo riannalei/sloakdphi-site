@@ -108,13 +108,6 @@ const classes = [
         photo: '/sisters/Araya.JPG',
       },
       {
-        id: '#183',
-        nickname: 'Kiki',
-        name: 'Bria',
-        lastName: 'Shimada',
-        photo: '/sisters/Bria.JPG',
-      },
-      {
         id: '#184',
         nickname: 'driftQueen',
         name: 'Ritika',
@@ -182,26 +175,6 @@ const classes = [
         lastName: 'Sung',
         photo: '/sisters/Kelly.JPG',
       },
-      {
-        id: '#176',
-        nickname: 'Totoro',
-        name: 'Jacie',
-        lastName: 'Tram',
-        photo: '/sisters/jacie.JPG',
-      },
-    ],
-  },
-  {
-    title: "Winter '24",
-    subtitle: 'alpha mu',
-    sisters: [
-      {
-        id: '#170',
-        nickname: 'P.U.R.R.',
-        name: 'Sara',
-        lastName: 'Stone',
-        photo: '/sisters/sara.jpg',
-      },
     ],
   },
   {
@@ -228,13 +201,6 @@ const classes = [
         name: 'Daphne',
         lastName: 'So',
         photo: '/sisters/daphne.JPG',
-      },
-      {
-        id: '#168',
-        nickname: 'Straw Bear Ry',
-        name: 'Anh',
-        lastName: 'Tran',
-        photo: '/sisters/anh.jpg',
       },
     ],
   },
