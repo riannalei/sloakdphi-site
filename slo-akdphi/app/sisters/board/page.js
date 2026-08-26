@@ -100,17 +100,17 @@ const BoardPage = () => {
         <Box sx={styles.container}>
           <Typography sx={styles.purpleTitle}>Executive Board</Typography>
           <Typography sx={styles.positionText}>PRESIDENT</Typography>
-          <Typography sx={styles.nameText}>Daphne So</Typography>
-          <Typography sx={styles.positionText}>VP OF INTERNAL AFFAIRS</Typography>
           <Typography sx={styles.nameText}>Aurora-Marie Muñoz</Typography>
+          <Typography sx={styles.positionText}>VP OF INTERNAL AFFAIRS</Typography>
+          <Typography sx={styles.nameText}>Araya Leuth</Typography>
           <Typography sx={styles.positionText}>VP OF EXTERNAL AFFAIRS</Typography>
           <Typography sx={styles.nameText}>Kelly Sung</Typography>
           <Typography sx={styles.positionText}>VP OF SERVICE</Typography>
-          <Typography sx={styles.nameText}>Jacie Tram</Typography>
+          <Typography sx={styles.nameText}>Carys Nguyen</Typography>
           <Typography sx={styles.positionText}>VP OF NEW MEMBER EDUCATION (Winter 2026)</Typography>
-          <Typography sx={styles.nameText}>Anh Tran</Typography>
-          <Typography sx={styles.positionText}>VP OF TREASURY</Typography>
           <Typography sx={styles.nameText}>Cheyenne Deocares</Typography>
+          <Typography sx={styles.positionText}>VP OF TREASURY</Typography>
+          <Typography sx={styles.nameText}>Olivia Low</Typography>
           <Typography sx={styles.positionText}>SECRETARY</Typography>
           <Typography sx={styles.nameText}>Hannah Mored</Typography>
         </Box>
@@ -118,22 +118,22 @@ const BoardPage = () => {
         {/* Chairs Container */}
         <Box sx={styles.container}>
           <Typography sx={styles.purpleTitle}>Cabinet</Typography>
-          <Typography sx={styles.positionText}>RECRUITMENT (Winter 2026)</Typography>
-          <Typography sx={styles.nameText}>Aurora-Marie Muñoz, Cheyenne Deocares</Typography>
           <Typography sx={styles.positionText}>RECRUITMENT (Fall 2026)</Typography>
           <Typography sx={styles.nameText}>Haley Hoang, Lindsay Lee</Typography>
+          <Typography sx={styles.positionText}>RECRUITMENT (Winter 2027)</Typography>
+          <Typography sx={styles.nameText}>Araya Leuth, Lexy Lim</Typography>
           <Typography sx={styles.positionText}>OPEN HOUSE</Typography>
           <Typography sx={styles.nameText}>Hannah Mored</Typography>
           <Typography sx={styles.positionText}>DIVERSITY, EQUITY, AND INCLUSION</Typography>
           <Typography sx={styles.nameText}>MJ Pagaoa</Typography>
           <Typography sx={styles.positionText}>CULTURAL</Typography>
-          <Typography sx={styles.nameText}>Cheyenne Deocares, Araya Leuth, Bria Shimada</Typography>
+          <Typography sx={styles.nameText}>Haley Hoang, Lexy Lim, Shreeya Sarvanan </Typography>
           <Typography sx={styles.positionText}>CONTRIBUTION</Typography>
-          <Typography sx={styles.nameText}>Megan Morimoto</Typography>
+          <Typography sx={styles.nameText}>Araya Leuth</Typography>
           <Typography sx={styles.positionText}>ACADEMICS</Typography>
           <Typography sx={styles.nameText}>Hannah Mored</Typography>
           <Typography sx={styles.positionText}>FUNDRAISER</Typography>
-          <Typography sx={styles.nameText}>Jacie Tram, Layla Fahmi</Typography>
+          <Typography sx={styles.nameText}> Araya Leuth, Lexy Lim, Shreeya Saravanan </Typography>
           <Typography sx={styles.positionText}>SISTERHOOD</Typography>
           <Typography sx={styles.nameText}>Ritika Sridhar</Typography>
           <Typography sx={styles.positionText}>DANCE COORDINATORS</Typography>
@@ -141,13 +141,13 @@ const BoardPage = () => {
           <Typography sx={styles.positionText}>ALUMNI RELATIONS</Typography>
           <Typography sx={styles.nameText}>Carys Nguyen</Typography>
           <Typography sx={styles.positionText}>MEDIA RELATIONS</Typography>
-          <Typography sx={styles.nameText}>Dani Tran</Typography>
+          <Typography sx={styles.nameText}>Lindsay Lee</Typography>
           <Typography sx={styles.positionText}>GRAPHICS</Typography>
-          <Typography sx={styles.nameText}>Jacie Tram</Typography>
+          <Typography sx={styles.nameText}>Ritika Sridhar</Typography>
           <Typography sx={styles.positionText}>WEB DEVELOPER</Typography>
-          <Typography sx={styles.nameText}>Rianna Lei</Typography>
+          <Typography sx={styles.nameText}>Shreeya Saravanan</Typography>
           <Typography sx={styles.positionText}>VIOLENCE PREVENTION</Typography>
-          <Typography sx={styles.nameText}>Megan Morimoto</Typography>
+          <Typography sx={styles.nameText}>Daphne So</Typography>
         </Box>
       </Box>
     </Box>
