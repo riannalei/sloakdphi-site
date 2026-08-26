@@ -279,9 +279,6 @@ const rosterData = {
     'Daphne So',
     'Anh Tran',
   ],
-  'ALPHA MU': [
-    'Sara Stone',
-  ],
   'ALPHA NU': [
     'Olivia Low',
     'Aurora-Marie Munoz',
@@ -297,7 +294,10 @@ const rosterData = {
   'ALPHA OMICRON': [
     'Layla Fahmi',
     'Araya Leuth',
-    'Bria Shimada',
     'Ritika Sridhar',
+  ],
+  'ALPHA PI': [
+    'Lexy Lim',
+    'Shreeya Saravanan',
   ],
 };
