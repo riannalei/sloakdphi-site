@@ -10,12 +10,12 @@ const sectionTitleStyles = {
   letterSpacing: '0.05em',
   marginTop: '5px',
   marginBottom: '5px', // Reduced spacing below the title
-  color: '#d2afecff',
+  color: '#4a261aff',
 };
 
 const subtitleStyles = {
   fontSize: '1.2rem',
-  color: '#d2afecff',
+  color: '#4a261aff',
   lineHeight: '1.6',
   textAlign: 'center',
   maxWidth: '800px',
@@ -91,7 +91,7 @@ export default function SistersPage() {
             sx={{
               flex: 1,
               maxWidth: '300px',
-              backgroundColor: '#847c74', // Lighter brown for cards
+              backgroundColor: '#abd2cdff', // Lighter brown for cards
               color: '#ffffff',
               borderRadius: '10px',
               boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
