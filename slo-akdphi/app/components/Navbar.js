@@ -64,7 +64,7 @@ export default function Navbar() {
             sx={{
               color: '#41250dff',
               textAlign: 'center',
-              fontFamily: 'Courier New, monospace',
+              fontFamily: 'Times New Roman, serif',
             }}
           />
         </ListItem>
@@ -150,7 +150,7 @@ export default function Navbar() {
               '& .MuiTab-root': {
                 fontWeight: 600,
                 fontSize: { xs: '0.8rem', sm: '1rem' },
-                color: '#65d3ccff',
+                color: '#4e2525ff',
                 fontFamily: 'Courier New, monospace',
                 textTransform: 'none',
                 minWidth: { xs: '60px', sm: '80px' },
