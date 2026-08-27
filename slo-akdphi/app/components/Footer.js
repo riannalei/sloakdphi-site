@@ -22,7 +22,7 @@ export default function Footer() {
         content: '""',
         position: 'absolute',
         inset: 0,
-        backgroundColor: 'rgba(69, 37, 37, 0.65)',
+        backgroundColor: 'rgba(255, 255, 255, 0.33)',
       },
 
       '& > *': {

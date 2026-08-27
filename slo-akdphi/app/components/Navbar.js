@@ -53,9 +53,9 @@ export default function Navbar() {
           key={item.label}
           onClick={() => handleChange(null, index)}
           sx={{
-            backgroundColor: value === index ? '#f0e6ff' : 'transparent',
+            backgroundColor: value === index ? '#f5f0fbff' : 'transparent',
             '&:hover': {
-              backgroundColor: '#f0e6ff',
+              backgroundColor: '#f0eaf9ff',
             },
           }}
         >
@@ -145,12 +145,12 @@ export default function Navbar() {
             value={value}
             onChange={handleChange}
             textColor="primary"
-            TabIndicatorProps={{ style: { backgroundColor: '#dccff9' } }}
+            TabIndicatorProps={{ style: { backgroundColor: '#0fbeb3ff' } }}
             sx={{
               '& .MuiTab-root': {
                 fontWeight: 600,
                 fontSize: { xs: '0.8rem', sm: '1rem' },
-                color: '#ffe6f0ff',
+                color: '#0b8e85ff',
                 fontFamily: 'Inter, Arial, sans-serif',
                 textTransform: 'none',
                 minWidth: { xs: '60px', sm: '80px' },

@@ -152,11 +152,12 @@ export default function HomePage() {
             margin: '0 auto',
           }}
         >
-          Our Fall 2026 Rush is coming soon! Stay tuned for updates and get ready to learn more about alpha Kappa Delta Phi. We can&apos;t wait to meet you!
+          Oops we did it again... Our Fall 2026 Rush is coming soon! Stay tuned for updates and get ready to learn more about alpha Kappa Delta Phi. We can&apos;t wait to meet you!
         </Typography>
         <Button
           variant="contained"
           sx={buttonStyles}
+          backgroundColor= '#0b8e85ff'
           href="/recruitment"
         >
           Rush Page
