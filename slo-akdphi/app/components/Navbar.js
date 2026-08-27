@@ -76,9 +76,12 @@ export default function Navbar() {
     <AppBar
       position="sticky"
       sx={{
-        backgroundColor: '#f9f9f7',
+        backgroundImage: 'url(/homepage/y2k-footer-bg.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
         boxShadow: 'none',
-        padding: { xs: '5px 10px', sm: '10px 20px' },
+        padding: { xs: '10px 20px', sm: '15px 30px' },
       }}
     >
       <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
