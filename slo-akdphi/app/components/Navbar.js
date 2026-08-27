@@ -118,7 +118,7 @@ export default function Navbar() {
               aria-label="open drawer"
               edge="start"
               onClick={() => setMobileOpen(!mobileOpen)}
-              sx={{ color: '#ccbdeaff' }}
+              sx={{ color: '#63f7ebff' }}
             >
               <MenuIcon />
             </IconButton>
@@ -145,12 +145,12 @@ export default function Navbar() {
             value={value}
             onChange={handleChange}
             textColor="primary"
-            TabIndicatorProps={{ style: { backgroundColor: '#0fbeb3ff' } }}
+            TabIndicatorProps={{ style: { backgroundColor: '#1fcbc0ff' } }}
             sx={{
               '& .MuiTab-root': {
                 fontWeight: 600,
                 fontSize: { xs: '0.8rem', sm: '1rem' },
-                color: '#0b8e85ff',
+                color: '#0ec1b5ff',
                 fontFamily: 'Inter, Arial, sans-serif',
                 textTransform: 'none',
                 minWidth: { xs: '60px', sm: '80px' },

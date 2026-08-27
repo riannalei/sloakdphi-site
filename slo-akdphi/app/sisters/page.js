@@ -10,12 +10,12 @@ const sectionTitleStyles = {
   letterSpacing: '0.05em',
   marginTop: '5px',
   marginBottom: '5px', // Reduced spacing below the title
-  color: '#6b625a',
+  color: '#d2afecff',
 };
 
 const subtitleStyles = {
   fontSize: '1.2rem',
-  color: '#6b625a',
+  color: '#d2afecff',
   lineHeight: '1.6',
   textAlign: 'center',
   maxWidth: '800px',
@@ -27,7 +27,7 @@ const subtitleStyles = {
 //   textAlign: 'center',
 //   lineHeight: '1.6',
 //   fontWeight: 400,
-//   color: '#6b625a',
+//   color: '#d2afecff',
 //   maxWidth: '800px',
 //   marginBottom: '10px', // Reduced spacing below the subtitle
 // };

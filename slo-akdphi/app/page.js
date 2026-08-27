@@ -157,7 +157,6 @@ export default function HomePage() {
         <Button
           variant="contained"
           sx={buttonStyles}
-          backgroundColor= '#0b8e85ff'
           href="/recruitment"
         >
           Rush Page
