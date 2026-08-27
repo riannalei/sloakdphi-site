@@ -62,7 +62,7 @@ export default function Navbar() {
           <ListItemText 
             primary={item.label} 
             sx={{
-              color: '#6b625a',
+              color: '#41250dff',
               textAlign: 'center',
               fontFamily: 'Inter, Arial, sans-serif',
             }}
@@ -91,7 +91,7 @@ export default function Navbar() {
             fontWeight="bold"
             sx={{
               fontSize: { xs: '1.2rem', sm: '1.5rem' },
-              color: '#6b625a',
+              color: '#41250dff',
               fontFamily: 'Inter, Arial, sans-serif',
               letterSpacing: '0.05em',
             }}
@@ -102,7 +102,7 @@ export default function Navbar() {
             variant="subtitle2"
             sx={{
               fontSize: { xs: '0.8rem', sm: '1rem' },
-              color: '#6b625a',
+              color: '#41250dff',
               marginTop: '-5px',
               fontFamily: 'Inter, Arial, sans-serif',
             }}
@@ -118,7 +118,7 @@ export default function Navbar() {
               aria-label="open drawer"
               edge="start"
               onClick={() => setMobileOpen(!mobileOpen)}
-              sx={{ color: '#6b625a' }}
+              sx={{ color: '#ccbdeaff' }}
             >
               <MenuIcon />
             </IconButton>

@@ -14,7 +14,7 @@ export default function Footer() {
       textAlign: 'center',
       py: 4,
       mt: 4,
-      backgroundImage: 'url(/homepage/y2k-footer-bg.png)',
+      backgroundImage: 'url(/homepage/y2k-footer-bg.jpg)',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
 
@@ -34,7 +34,7 @@ export default function Footer() {
       <Typography
         variant="h6"
         fontWeight="bold"
-        sx={{ fontFamily: 'Inter, Arial, sans-serif', color: '#6b625a' }}
+        sx={{ fontFamily: 'Inter, Arial, sans-serif', color: '#41250dff' }}
       >
         CAL POLY aKDPhi
       </Typography>
@@ -43,7 +43,7 @@ export default function Footer() {
         sx={{
           fontFamily: 'Inter, Arial, sans-serif',
           fontSize: '0.85rem',
-          color: '#6b625a',
+          color: '#41250dff',
         }}
       >
         Omicron Chapter
@@ -53,7 +53,7 @@ export default function Footer() {
         sx={{
           display: 'block',
           mt: 1,
-          color: '#6b625a',
+          color: '#41250dff',
           fontFamily: 'Inter, Arial, sans-serif',
         }}
       >
