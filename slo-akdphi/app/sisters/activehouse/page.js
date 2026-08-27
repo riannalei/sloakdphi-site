@@ -166,7 +166,7 @@ const classes = [
         nickname: 'Black Ber Ry',
         name: 'Carys',
         lastName: 'Nguyen',
-        photo: '/sisters/carys.png',
+        photo: '/sisters/carys.jpg',
       },
     ],
   },
