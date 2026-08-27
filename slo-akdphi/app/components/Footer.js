@@ -34,14 +34,14 @@ export default function Footer() {
       <Typography
         variant="h6"
         fontWeight="bold"
-        sx={{ fontFamily: 'Inter, Arial, sans-serif', color: '#41250dff' }}
+        sx={{ fontFamily: 'Courier New, monospace', color: '#41250dff' }}
       >
         CAL POLY aKDPhi
       </Typography>
       <Typography
         variant="subtitle2"
         sx={{
-          fontFamily: 'Inter, Arial, sans-serif',
+          fontFamily: 'Courier New, monospace',
           fontSize: '0.85rem',
           color: '#41250dff',
         }}
@@ -54,7 +54,7 @@ export default function Footer() {
           display: 'block',
           mt: 1,
           color: '#41250dff',
-          fontFamily: 'Inter, Arial, sans-serif',
+          fontFamily: 'Courier New, monospace',
         }}
       >
         SISTERHOOD | LEADERSHIP | SCHOLARSHIP | SERVICE | ASIAN-AWARENESS

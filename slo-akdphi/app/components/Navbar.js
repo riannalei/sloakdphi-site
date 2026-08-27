@@ -64,7 +64,7 @@ export default function Navbar() {
             sx={{
               color: '#41250dff',
               textAlign: 'center',
-              fontFamily: 'Inter, Arial, sans-serif',
+              fontFamily: 'Courier New, monospace',
             }}
           />
         </ListItem>
@@ -92,7 +92,7 @@ export default function Navbar() {
             sx={{
               fontSize: { xs: '1.2rem', sm: '1.5rem' },
               color: '#41250dff',
-              fontFamily: 'Inter, Arial, sans-serif',
+              fontFamily: 'Courier New, monospace',
               letterSpacing: '0.05em',
             }}
           >
@@ -104,7 +104,7 @@ export default function Navbar() {
               fontSize: { xs: '0.8rem', sm: '1rem' },
               color: '#41250dff',
               marginTop: '-5px',
-              fontFamily: 'Inter, Arial, sans-serif',
+              fontFamily: 'Courier New, monospace',
             }}
           >
             Omicron Chapter
@@ -151,7 +151,7 @@ export default function Navbar() {
                 fontWeight: 600,
                 fontSize: { xs: '0.8rem', sm: '1rem' },
                 color: '#65d3ccff',
-                fontFamily: 'Inter, Arial, sans-serif',
+                fontFamily: 'Courier New, monospace',
                 textTransform: 'none',
                 minWidth: { xs: '60px', sm: '80px' },
                 padding: { xs: '6px 8px', sm: '12px 16px' },
