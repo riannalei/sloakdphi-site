@@ -7,15 +7,30 @@ import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
 
 export default function Footer() {
   return (
-    <Box
-      sx={{
-        backgroundColor: '#f9f9f7',
-        textAlign: 'center',
-        py: 4,
-        mt: 4,
-        // borderTop: '1px solid #e0e0e0',
-      }}
-    >
+      <Box
+    sx={{
+      position: 'relative',
+      overflow: 'hidden',
+      textAlign: 'center',
+      py: 4,
+      mt: 4,
+      backgroundImage: 'url(/homepage/y2k-footer-bg.png)',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+
+      '&::before': {
+        content: '""',
+        position: 'absolute',
+        inset: 0,
+        backgroundColor: 'rgba(255, 255, 255, 0.65)',
+      },
+
+      '& > *': {
+        position: 'relative',
+        zIndex: 1,
+      },
+    }}
+  >
       <Typography
         variant="h6"
         fontWeight="bold"
