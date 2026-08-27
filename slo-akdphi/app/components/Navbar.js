@@ -76,7 +76,7 @@ export default function Navbar() {
     <AppBar
       position="sticky"
       sx={{
-        backgroundImage: 'url(/homepage/y2k-footer-bg.png)',
+        backgroundImage: 'url(/homepage/y2k-footer-bg.jpg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -150,7 +150,7 @@ export default function Navbar() {
               '& .MuiTab-root': {
                 fontWeight: 600,
                 fontSize: { xs: '0.8rem', sm: '1rem' },
-                color: '#6b625a',
+                color: '#ffe6f0ff',
                 fontFamily: 'Inter, Arial, sans-serif',
                 textTransform: 'none',
                 minWidth: { xs: '60px', sm: '80px' },
