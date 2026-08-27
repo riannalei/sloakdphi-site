@@ -76,10 +76,7 @@ export default function Navbar() {
     <AppBar
       position="sticky"
       sx={{
-        backgroundImage: 'url(/homepage/y2k-footer-bg.png)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
+        backgroundColor: '#ebebebff'
         boxShadow: 'none',
         padding: { xs: '10px 20px', sm: '15px 30px' },
       }}
