@@ -68,16 +68,17 @@ export default function AboutPage() {
       <Box sx={containerStyles}>
         <Typography sx={sectionTitleStyles}>A Note From Our President</Typography>
         <Typography sx={subTextStyles}>
-          Hello! My name is Daphne So, and I am excited to serve as Omicron Chapter&apos;s President for
-          the 2025-2026 year. I am eternally grateful for everything aKDPhi has given me and am honored
-          to give back to the community that nurtured me.
+          Hello and welcome to alpha Kappa Delta Phi, Omicron Chapter’s website!  
+          My name is Aurora-Marie Muñoz and I am serving as Omicron Chapter’s President for the 2026-2027 year.  
+          In our community, we value supporting one another inside and outside of our sorority.  
+          Each woman in this sisterhood offers so much to our chapter, and I am forever grateful to be leading a group of such inspiring women.  
+
         </Typography>
         <Typography sx={subTextStyles}>
-          As you browse our website, I hope you consider reaching out to us through our connect tab.
-          So many memories are waiting to be made!
+          As you browse our website, feel free to reach to us via our connect tab.  We hope you are able to learn more about our chapter and what alpha Kappa Delta Phi could potentially look like for you!
         </Typography>
         <Typography sx={{ ...subTextStyles, padding: '20px', textAlign: 'center', fontStyle: 'italic' }}>
-          Love and Friendship,<br />Daphne So
+          With Love and Friendship,<br />Aurora-Marie Muñoz
         </Typography>
       </Box>
 
